@@ -1,0 +1,10 @@
+@import './abstracts/variables';
+@import './base/reset';
+@import './base/typography';
+@import './layout/header';
+@import './layout/navigation';
+
+
+body {
+  margin: 0 5% 0 5%;
+}
