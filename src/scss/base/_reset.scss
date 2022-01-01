@@ -38,12 +38,12 @@ img {
   max-width: 100%;
   display: block;
 }
-html:focus-within {
+html{
   scroll-behavior: smooth;
 }
 
 body {
   // min-height: 100vh;
   text-rendering: optimizeSpeed;
-  line-height: 1.5;
+  line-height: 1.6;
 }

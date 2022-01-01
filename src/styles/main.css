@@ -41,13 +41,13 @@ img {
   display: block;
 }
 
-html:focus-within {
+html {
   scroll-behavior: smooth;
 }
 
 body {
   text-rendering: optimizeSpeed;
-  line-height: 1.5;
+  line-height: 1.6;
 }
 
 @font-face {
@@ -64,12 +64,12 @@ body {
   font-family: "share-tech-mono";
   font-size: 5rem;
   font-weight: 400;
-  line-height: 1.3;
+  line-height: 1.5;
   background-color: #0d0f15;
 }
 
 .intro {
-  height: 85vh;
+  height: 90vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -141,7 +141,6 @@ body {
   flex-direction: column;
   align-items: center;
   margin-left: 2em;
-  height: 75%;
 }
 .landing-page-icons .fab,
 .landing-page-icons .fas {
@@ -166,7 +165,7 @@ body {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  height: 15vh;
+  height: 10vh;
   gap: 7%;
 }
 
@@ -215,12 +214,29 @@ body {
 }
 
 .container-about-me {
-  min-height: 100vh;
+  min-height: 90vh;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 2rem;
   color: #cac9e3f5;
+}
+.container-about-me .developer-svg img {
+  width: 100%;
+  height: 100%;
+}
+.container-about-me h3 {
+  font-size: 2.5rem;
+  color: #dad81f;
+}
+.container-about-me p {
+  font-family: monospace;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.about-text {
+  width: 100%;
 }
 
 body {
