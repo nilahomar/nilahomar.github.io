@@ -85,6 +85,55 @@ body {
   color: #cac9e3f5;
 }
 
+.name h2 {
+  position: relative;
+  width: max-content;
+  letter-spacing: 0.5rem;
+}
+
+.name h2::before, h2::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.name h2::before {
+  background: #0d0f15;
+  animation: typewriter 4s steps(20) 1s forwards;
+}
+
+.name h2::after {
+  width: 0.125em;
+  background: #cac9e3f5;
+  animation: typewriter 4s steps(20) 1s forwards, blink 1s steps(20) infinite;
+}
+
+.info {
+  margin-top: 0.5em;
+  opacity: 0;
+  transform: translateY(3rem);
+  animation: fadeInUp 2s ease 5.5s forwards;
+}
+
+@keyframes typewriter {
+  to {
+    left: 100%;
+  }
+}
+@keyframes blink {
+  to {
+    background: transparent;
+  }
+}
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 .image-container img {
   height: 70vh;
   object-fit: contain;
@@ -98,11 +147,16 @@ body {
   margin-left: 2em;
   height: 75%;
 }
-
-.fab,
-.fas {
+.landing-page-icons .fab,
+.landing-page-icons .fas {
   color: #9362ff;
   font-size: 3rem;
+  transition: all 0.3s;
+}
+.landing-page-icons .fab:hover,
+.landing-page-icons .fas:hover {
+  color: #dad81f;
+  transform: scale(1.2);
 }
 
 .nav-bar {
@@ -116,11 +170,28 @@ body {
   height: 15vh;
   gap: 7%;
 }
-.nav-bar .nav-list {
+
+.nav-link {
+  position: relative;
   background: linear-gradient(to right, #dad81f 0%, #9362ff 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 2.3rem;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  background-color: pink;
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: -10px;
+  transition: all 0.3s;
+}
+
+.nav-link:hover::after {
+  width: 100%;
 }
 
 .btn {

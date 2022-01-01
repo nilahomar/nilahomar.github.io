@@ -8,10 +8,27 @@
     height: 15vh;
     gap: 7%;
   }
-  .nav-list {
-    background: linear-gradient(to right, #dad81f 0%, #9362ff 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size: 2.3rem;
-  }
+}
+
+.nav-link {
+  position: relative;
+  background: linear-gradient(to right, #dad81f 0%, #9362ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 2.3rem;
+}
+
+.nav-link::after{
+  content: "";
+  position: absolute;
+  background-color: pink;
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: -10px;
+  transition:all 0.3s;
+}
+
+.nav-link:hover::after{
+  width: 100%;
 }
