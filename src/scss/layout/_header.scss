@@ -6,13 +6,6 @@
 //   -webkit-text-fill-color: transparent;
 // }
 
-// .landing-page {
-//   height: 100vh;
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-//   justify-content: center;
-// }
 
 .wrapper {
   height: 100vh;
@@ -46,7 +39,7 @@
 }
 
 .name h2::before{
-  background: #0d0f15;
+  background: $secondary-color;
   animation: typewriter $type-writer-speed steps(20) 1s forwards;
 }
 
@@ -100,14 +93,14 @@
 
   .fab,
   .fas {
-    color: #9362ff;
+    color: $icon-color;
     font-size: 3rem;
     transition: all 0.3s;
   }
 
   .fab:hover,
   .fas:hover {
-    color: #dad81f;
+    color: $yellow-color;
     transform: scale(1.2);
   }
 }
