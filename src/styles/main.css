@@ -52,7 +52,7 @@ body {
 
 @font-face {
   font-family: "share-tech-mono";
-  src: url("../../fonts/ShareTechMono-Regular.ttf");
+  src: url("/src/fonts/ShareTechMono-Regular.ttf");
   font-style: normal;
   font-weight: 400;
 }
@@ -65,7 +65,7 @@ body {
   font-size: 5rem;
   font-weight: 400;
   line-height: 1.5;
-  background-color: #0d0f15;
+  background-color: #000000;
 }
 
 .intro {
@@ -97,7 +97,7 @@ body {
 }
 
 .name h2::before {
-  background: #0d0f15;
+  background: #000000;
   animation: typewriter 4s steps(20) 1s forwards;
 }
 
@@ -157,7 +157,7 @@ body {
 .nav-bar {
   margin-left: auto;
   margin-bottom: 1 em;
-  background: #0d0f15;
+  background: #000000;
   position: sticky;
   top: 0;
 }
@@ -197,7 +197,7 @@ body {
   border: 1px solid;
   padding: 5px 10px;
   border-radius: 2px;
-  color: #0d0f15;
+  color: #000000;
   margin-top: 1em;
 }
 .btn .fas {
@@ -210,7 +210,7 @@ body {
   background: linear-gradient(to right, #f8f503 0%, #6f3be3 100%);
 }
 .btn-primary a {
-  color: #0d0f15;
+  color: #000000;
 }
 
 .container-about-me {
