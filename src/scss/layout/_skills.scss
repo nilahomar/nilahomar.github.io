@@ -1,0 +1,120 @@
+.skills-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  color: $primary-color;
+  h3 {
+    font-size: 2.5rem;
+    color: $yellow-color;
+  }
+  p {
+    font-family: monospace;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+.skill-sets {
+  div {
+    border-radius: 50%;
+  }
+}
+
+.circle1 {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  background-color: #515117;
+}
+
+.circle2 {
+  transform: translate(18%, 18%);
+  width: 300px;
+  height: 300px;
+  background-color: #373733;
+  box-shadow: 0px 0.5px 3.9px rgba(0, 0, 0, 0.123),
+    0.1px 1.2px 9.8px rgba(0, 0, 0, 0.183),
+    0.2px 2.5px 20px rgba(0, 0, 0, 0.231),
+    0.4px 5.1px 41.2px rgba(0, 0, 0, 0.28), 1px 14px 113px rgba(0, 0, 0, 0.37);
+}
+
+.circle3 {
+  transform: translate(25%, 25%);
+  width: 200px;
+  height: 200px;
+  position: relative;
+  background-color: #101010;
+  box-shadow: 0px 0.5px 3.9px rgba(0, 0, 0, 0.123),
+    0.1px 1.2px 9.8px rgba(0, 0, 0, 0.183),
+    0.2px 2.5px 20px rgba(0, 0, 0, 0.231),
+    0.4px 5.1px 41.2px rgba(0, 0, 0, 0.28), 1px 14px 113px rgba(0, 0, 0, 0.37);
+  .skill-icons {
+    position: absolute;
+    font-size: 4rem;
+  }
+}
+
+.icon1 {
+  top: -2px;
+  left: 82px;
+  color: #dd4b24;
+}
+
+.icon2 {
+  bottom: -10px;
+  left: 82px;
+  color: #2791eb;
+}
+
+.icon3 {
+  top: 70px;
+  left: 82px;
+  color: #efd81d;
+}
+
+.icon4 {
+  top: -107px;
+  left: 85px;
+  color: #5ccdea;
+}
+.icon5 {
+  top: 0;
+  left: 180px;
+  color: #8512f3;
+}
+.icon6 {
+  left: -92px;
+  top: 72px;
+  color: #d61b15;
+}
+
+.icon7 {
+  bottom: 0px;
+  right: 180px;
+  color: #5e9255;
+}
+
+.icon8 {
+  bottom: -7px;
+  left: 180px;
+  color: #cf649a;
+}
+
+.icon9 {
+  top: -15px;
+  left: -10px;
+  color: #c13533;
+}
+.icon10 {
+  right: -92px;
+  top: 72px;
+  color: #111416;
+}
+
+.icon11 {
+  bottom: -107px;
+  left: 85px;
+  color: #f29100;
+}
