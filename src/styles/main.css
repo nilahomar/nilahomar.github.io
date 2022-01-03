@@ -263,15 +263,17 @@ body {
   position: relative;
   width: 400px;
   height: 400px;
-  background-color: #515117;
+  background-color: #151510;
 }
 
 .circle2 {
   transform: translate(18%, 18%);
   width: 300px;
   height: 300px;
-  background-color: #373733;
-  box-shadow: 0px 0.5px 3.9px rgba(0, 0, 0, 0.123), 0.1px 1.2px 9.8px rgba(0, 0, 0, 0.183), 0.2px 2.5px 20px rgba(0, 0, 0, 0.231), 0.4px 5.1px 41.2px rgba(0, 0, 0, 0.28), 1px 14px 113px rgba(0, 0, 0, 0.37);
+  background-color: #000000;
+  box-shadow: 0px -13px 101px 6px rgba(230, 221, 15, 0.75);
+  -webkit-box-shadow: 0px -13px 101px 6px rgba(53, 41, 67, 0.9);
+  -moz-box-shadow: 0px -13px 101px 6px rgba(230, 221, 15, 0.75);
 }
 
 .circle3 {
@@ -280,7 +282,9 @@ body {
   height: 200px;
   position: relative;
   background-color: #101010;
-  box-shadow: 0px 0.5px 3.9px rgba(0, 0, 0, 0.123), 0.1px 1.2px 9.8px rgba(0, 0, 0, 0.183), 0.2px 2.5px 20px rgba(0, 0, 0, 0.231), 0.4px 5.1px 41.2px rgba(0, 0, 0, 0.28), 1px 14px 113px rgba(0, 0, 0, 0.37);
+  box-shadow: 0px -9px 130px 6px rgba(230, 221, 15, 0.75);
+  -webkit-box-shadow: 0px -9px 130px 6px rgba(46, 191, 24, 0.75);
+  -moz-box-shadow: 0px -9px 130px 6px rgba(230, 221, 15, 0.75);
 }
 .circle3 .skill-icons {
   position: absolute;
@@ -344,7 +348,7 @@ body {
 .icon10 {
   right: -92px;
   top: 72px;
-  color: #111416;
+  color: white;
 }
 
 .icon11 {
