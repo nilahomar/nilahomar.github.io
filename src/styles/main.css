@@ -415,8 +415,6 @@ h2 {
 
 .form-container {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
   padding: 3rem;
 }
 
@@ -445,7 +443,6 @@ h2 {
 
 .right-inner-container {
   width: 70%;
-  height: 80%;
   text-align: center;
 }
 
@@ -453,29 +450,14 @@ h2 {
   height: 50%;
   width: 80%;
   text-align: center;
-  line-height: 22px;
 }
 
 form .field {
   width: 100%;
   position: relative;
-  margin-bottom: 15px;
+  margin-bottom: 1.5rem;
 }
-
-form .field label {
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: linear-gradient(90deg, #b13e8b, #372056);
-  width: 100%;
-  height: 64px;
-  transition: width 333ms ease-in-out;
-  text-align: center;
-  padding: 18px 0;
-}
-
-form .field input[type=text],
-form .field textarea {
+form .field input[type=text], form .field textarea {
   border: none;
   width: 100%;
   height: 64px;
@@ -483,17 +465,28 @@ form .field textarea {
   padding-left: 19.5%;
   color: #313a3d;
 }
+form label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(90deg, #b13e8b, #372056);
+  width: 100%;
+  height: 64px;
+  transition: 0.5s ease-in-out;
+  text-align: center;
+  padding: 2.5rem 0;
+}
 
 form #msg {
   height: 64px;
   resize: none;
   transition: all 333ms ease-in-out;
-  padding-top: 18px;
+  padding-top: 2rem;
 }
 
 form textarea:focus#msg,
 form textarea:not(:placeholder-shown)#msg {
-  height: 166px;
+  height: 160px;
 }
 
 form input[type=text]:focus + label,
@@ -510,27 +503,34 @@ form input[type=submit] {
   border: none;
   position: relative;
   padding: 13px 50px;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  border-radius: 20px;
+  color: #000000;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
 }
 
 form input[type=submit]:hover,
 form input[type=submit]:focus {
-  background: #372056;
+  background: #a94b9e;
 }
 
-input, textarea {
+input,
+textarea {
   background-color: #eee;
   border: none;
   padding: 12px 15px;
   margin: 8px 0;
   width: 100%;
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 
 .btn-form {
   border-radius: 20px;
   background-color: #62486f;
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 12px;
   font-weight: bold;
   padding: 12px 45px;
