@@ -20,7 +20,7 @@
           <li class="nav-list"><a class="nav-link" href="#">Home</a></li>
           <li class="nav-list"><a class="nav-link" href="#about-me">About Me</a></li>
           <li class="nav-list"><a class="nav-link" href="#skills">Skills</a></li>
-          <li class="nav-list"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-list"><a class="nav-link" href="#projects" class="projects">Projects</a></li>
           <li class="nav-list"><a class="nav-link" href="#contact">Contact</a></li>
 
         </ul>
@@ -100,17 +100,17 @@
               <div class="circle2">
                 <div class="circle3">
                   <ul>
-                   <li class="skill-icons icon1"><a href=""><i class="fab fa-html5"></i></a></li>
-                   <li class="skill-icons icon2"><a href=""><i class="fab fa-css3-alt"></i></a></li>
-                   <li class="skill-icons icon3"><a href=""><i class="fab fa-js-square"></i></a></li>
-                   <li class="skill-icons icon4"><a href=""><i class="fab fa-react"></i></a></li>
-                   <li class="skill-icons icon5"><a href=""><i class="fab fa-bootstrap"></i></a></li>
-                   <li class="skill-icons icon6"><a href=""><i class="fab fa-angular"></i></a></li>
-                   <li class="skill-icons icon7"><a href=""><i class="fab fa-node"></i></a></li>
-                   <li class="skill-icons icon8"><a href=""><i class="fab fa-sass"></i></a></li>
-                   <li class="skill-icons icon9"><a href=""><i class="fab fa-npm"></i></a></li>
-                   <li class="skill-icons icon10"><a href=""><i class="fab fa-github"></i></a></li>
-                   <li class="skill-icons icon11"><a href=""><i class="fab fa-aws"></i></a></li>
+                    <li class="skill-icons icon1"><a href=""><i class="fab fa-html5"></i></a></li>
+                    <li class="skill-icons icon2"><a href=""><i class="fab fa-css3-alt"></i></a></li>
+                    <li class="skill-icons icon3"><a href=""><i class="fab fa-js-square"></i></a></li>
+                    <li class="skill-icons icon4"><a href=""><i class="fab fa-react"></i></a></li>
+                    <li class="skill-icons icon5"><a href=""><i class="fab fa-bootstrap"></i></a></li>
+                    <li class="skill-icons icon6"><a href=""><i class="fab fa-angular"></i></a></li>
+                    <li class="skill-icons icon7"><a href=""><i class="fab fa-node"></i></a></li>
+                    <li class="skill-icons icon8"><a href=""><i class="fab fa-sass"></i></a></li>
+                    <li class="skill-icons icon9"><a href=""><i class="fab fa-npm"></i></a></li>
+                    <li class="skill-icons icon10"><a href=""><i class="fab fa-github"></i></a></li>
+                    <li class="skill-icons icon11"><a href=""><i class="fab fa-aws"></i></a></li>
                   </ul>
                 </div>
               </div>
@@ -118,10 +118,74 @@
           </div>
         </div>
       </section>
-      <section class="projects"></section>
-      <section class="contact"></section>
+      <section class="projects" id="projects">
+      
+        <div class="project-container">
+          <div class="project-text">
+            <h3>Projects</h3>
+          </div>
+          <div class="images">
+            
+
+            <div class="image image-1" data-label="Star">
+              <a class="image-link" href="#">
+                <img id="slide-left" src="/src/img/burger-project.png" alt="">
+              </a>
+            </div>
+
+            <div class="image image-2" data-label="Star">
+              <a class="image-link" href="#">
+                <img id="slide-right"  src="/src/img/photo-project.png" alt="">
+              </a>
+            </div>
+
+          </div>
+        </div>
+      </section>
+      <section class="contact" id="contact">
+        <div class="contact-container">
+          <div class="form-container">
+            <div class="left-container">
+              <div class="left-inner-container">
+                <h2>Let's Chat</h2>
+                <p>Whether you have a question, want to start a project or simply want to connect.</p>
+                <br>
+                <p>Feel free to send me a message in the contact form</p>
+              </div>
+            </div>
+            <div class="right-container">
+              <div class="right-inner-container">
+                <form action="" method="get">
+                  <h2 class="lg-view">Contact</h2>
+                  <h2 class="sm-view">Let's Chat</h2>
+                  <div class="social-container">
+                    <a href="https://www.linkedin.com/in/nilahomar/" target="_blank"><i
+                        class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/nilahomar" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="mailto:nilahomar@gmail.com" target="_blank"><i class="fas fa-envelope-open"></i></a>
+                  </div>
+                    <div class="field">
+                      <input type="text" id="name" name="name" placeholder="Who are you?" autofocus/>
+                      <label for="name">Name</label>
+                    </div>
+                    <div class="field">
+                      <input type="text" id="email" name="email" placeholder="name@domain.tld" />
+                      <label for="email">E-Mail</label>
+                    </div>
+                    <div class="field">
+                      <textarea id="msg" rows="4" name="msg" placeholder="You message..."></textarea>
+                      <label for="msg">Message</label>
+                    </div>
+                    <input class="button" type="submit" value="Send" />
+                 
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
   </div>
 </body>
-
+<script src="/src/js/animation.js"></script>
 </html>

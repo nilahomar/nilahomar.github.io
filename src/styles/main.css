@@ -158,6 +158,7 @@ body {
   background: #000000;
   position: sticky;
   top: 0;
+  z-index: 1;
 }
 .nav-bar ul {
   display: flex;
@@ -216,12 +217,14 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 40px;
   font-size: 2rem;
   color: #cac9e3f5;
 }
 .container-about-me .developer-svg img {
-  width: 100%;
-  height: 100%;
+  width: 90%;
+  height: 90%;
+  transform: translate(100, 50);
 }
 .container-about-me h3 {
   font-size: 2.5rem;
@@ -231,10 +234,6 @@ body {
   font-family: monospace;
   font-size: 1.8rem;
   margin-bottom: 1.5rem;
-}
-
-.about-text {
-  width: 100%;
 }
 
 .skills-container {
@@ -355,6 +354,212 @@ body {
   bottom: -107px;
   left: 85px;
   color: #f29100;
+}
+
+.project-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-text {
+  font-size: 2.5rem;
+  color: #dad81f;
+}
+
+.images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.images img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  overflow: hidden;
+}
+
+.image {
+  max-width: 500px;
+  min-height: 500px;
+  position: relative;
+  overflow: hidden;
+  width: 600px;
+  height: 370px;
+}
+
+.contact {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-container {
+  background-color: #634d75;
+  border-radius: 5px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  position: relative;
+  overflow: hidden;
+  width: 768px;
+  max-width: 100%;
+  min-height: 480px;
+  min-width: 370px;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.form-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem;
+}
+
+.right-container {
+  display: flex;
+  flex: 1;
+  height: 460px;
+  background-color: #cac9e3f5;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-container {
+  display: flex;
+  flex: 1;
+  height: 460px;
+  justify-content: center;
+  align-items: center;
+  color: #000000;
+  background-color: #634d75;
+}
+
+.left-container p {
+  font-size: 0.9rem;
+}
+
+.right-inner-container {
+  width: 70%;
+  height: 80%;
+  text-align: center;
+}
+
+.left-inner-container {
+  height: 50%;
+  width: 80%;
+  text-align: center;
+  line-height: 22px;
+}
+
+form .field {
+  width: 100%;
+  position: relative;
+  margin-bottom: 15px;
+}
+
+form .field label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(90deg, #b13e8b, #372056);
+  width: 100%;
+  height: 64px;
+  transition: width 333ms ease-in-out;
+  text-align: center;
+  padding: 18px 0;
+}
+
+form .field input[type=text],
+form .field textarea {
+  border: none;
+  width: 100%;
+  height: 64px;
+  margin: 0;
+  padding-left: 19.5%;
+  color: #313a3d;
+}
+
+form #msg {
+  height: 64px;
+  resize: none;
+  transition: all 333ms ease-in-out;
+  padding-top: 18px;
+}
+
+form textarea:focus#msg,
+form textarea:not(:placeholder-shown)#msg {
+  height: 166px;
+}
+
+form input[type=text]:focus + label,
+form input[type=text]:not(:placeholder-shown) + label,
+form textarea:focus + label,
+form textarea:not(:placeholder-shown) + label,
+form .field:hover label {
+  width: 18%;
+}
+
+form input[type=submit] {
+  background: linear-gradient(90deg, #b13e8b, #812d65);
+  -webkit-appearance: none;
+  border: none;
+  position: relative;
+  padding: 13px 50px;
+  transition: all 0.3s ease-in-out;
+}
+
+form input[type=submit]:hover,
+form input[type=submit]:focus {
+  background: #372056;
+}
+
+input, textarea {
+  background-color: #eee;
+  border: none;
+  padding: 12px 15px;
+  margin: 8px 0;
+  width: 100%;
+  font-size: 0.8rem;
+}
+
+.btn-form {
+  border-radius: 20px;
+  background-color: #62486f;
+  color: #FFFFFF;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 12px 45px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: transform 80ms ease-in;
+  cursor: pointer;
+}
+
+.btn-form:hover {
+  opacity: 0.7;
+}
+
+@media only screen and (max-width: 600px) {
+  .left-container {
+    display: none;
+  }
+
+  .lg-view {
+    display: none;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .sm-view {
+    display: none;
+  }
+}
+form p {
+  text-align: left;
 }
 
 body {

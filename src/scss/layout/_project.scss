@@ -1,0 +1,77 @@
+.project-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+
+}
+
+.project-text {
+  font-size: 2.5rem;
+  color: $yellow-color;
+}
+
+.images {
+  display: flex;
+  flex-wrap: wrap;
+ 
+  gap: 30px;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    overflow: hidden;
+  }
+}
+.image {
+ 
+  max-width: 500px;
+  min-height: 500px;
+  position: relative;
+  overflow: hidden;
+  width: 600px;
+  height: 370px;
+}
+
+// #slide-left {
+//   position: absolute;
+//   left: -600px;
+//   width: 600px;
+//   height: 370px;
+//   max-width: 500px;
+//   min-height: 500px;
+//   animation: slideLeft 0.5s forwards;
+//   animation-delay: 2s;
+// }
+
+// #slide-right {
+//   position: absolute;
+//   right: -600px;
+//   width: 600px;
+//   height: 370px;
+//   max-width: 500px;
+//   min-height: 500px;
+//   animation: slideRight 0.5s forwards;
+//   animation-delay: 2s;
+// }
+
+// @keyframes slideLeft {
+//   100% { 
+//     left: 0;
+//    }
+// }
+// @keyframes slideRight {
+//   100% { 
+//     right: 0;
+//    }
+// }
+// .image-1 {
+//   grid-row: 1 / 4;
+//   grid-column: 1/4;
+// }
+
+// .image-2 {
+//   grid-row: 1 / 3;
+//   grid-column: 4/ 7;
+// }
