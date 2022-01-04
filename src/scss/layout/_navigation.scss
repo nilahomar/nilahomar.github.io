@@ -1,7 +1,7 @@
 .nav-bar {
   margin-left: auto;
   margin-bottom: 1 em;
-  background: $secondary-color;
+  background: $black;
   position: sticky;
   top: 0;
   z-index: 1;
@@ -16,7 +16,7 @@
 
 .nav-link {
   position: relative;
-  background: linear-gradient(to right, #dad81f 0%, #9362ff 100%);
+  background: $color-gradient;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 2.3rem;

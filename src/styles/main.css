@@ -63,20 +63,21 @@ html {
 body {
   font-family: "share-tech-mono";
   line-height: 1.5;
-  background-color: #000000;
+  background-image: linear-gradient(to left bottom, #41343f, #473a46, #4e404e, #544755, #5a4d5d, #554a59, #504656, #4b4352, #3a3542, #2b2832, #1d1b23, #0e0d14);
 }
 
 .intro {
   height: 90vh;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   flex-grow: 1;
+  gap: 40px;
 }
 
 .about-container {
+  color: #E5E7E7;
   font-size: 3rem;
-  color: #cac9e3f5;
 }
 
 .name h2 {
@@ -85,7 +86,8 @@ body {
   letter-spacing: 0.5rem;
 }
 
-.name h2::before, h2::after {
+.name h2::before,
+h2::after {
   content: "";
   position: absolute;
   top: 0;
@@ -95,7 +97,7 @@ body {
 }
 
 .name h2::before {
-  background: #000000;
+  background: #625668;
   animation: typewriter 4s steps(20) 1s forwards;
 }
 
@@ -129,13 +131,14 @@ body {
   }
 }
 .image-container img {
-  height: 70vh;
-  object-fit: contain;
+  height: 60vh;
+  height: 12 rem;
+  width: auto;
 }
 
 .landing-page-icons {
   display: flex;
-  gap: 20px;
+  gap: 45px;
   flex-direction: column;
   align-items: center;
   margin-left: 2em;
@@ -155,7 +158,7 @@ body {
 .nav-bar {
   margin-left: auto;
   margin-bottom: 1 em;
-  background: #000000;
+  background: #0E0D14;
   position: sticky;
   top: 0;
   z-index: 1;
@@ -170,7 +173,7 @@ body {
 
 .nav-link {
   position: relative;
-  background: linear-gradient(to right, #dad81f 0%, #9362ff 100%);
+  background: linear-gradient(to left bottom, #0e0d14, #2f3136, #53575b, #7c8082, #a7abac, #b4bcbc, #c1ccca, #d1ddd7, #cad4c5, #cac8b2, #cfbba3, #d4ac9c);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 2.3rem;
@@ -206,7 +209,7 @@ body {
 }
 
 .btn-primary {
-  background: linear-gradient(to right, #f8f503 0%, #6f3be3 100%);
+  background: #41343F;
 }
 .btn-primary a {
   color: #000000;
@@ -217,20 +220,22 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 40px;
+  gap: 80px;
   font-size: 2rem;
-  color: #cac9e3f5;
+  color: linear-gradient(to left bottom, #0e0d14, #2f3136, #53575b, #7c8082, #a7abac, #b4bcbc, #c1ccca, #d1ddd7, #cad4c5, #cac8b2, #cfbba3, #d4ac9c);
 }
-.container-about-me .developer-svg img {
-  width: 90%;
-  height: 90%;
-  transform: translate(100, 50);
+
+.about-text {
+  width: 100%;
+  color: linear-gradient(to left bottom, #0e0d14, #2f3136, #53575b, #7c8082, #a7abac, #b4bcbc, #c1ccca, #d1ddd7, #cad4c5, #cac8b2, #cfbba3, #d4ac9c);
 }
-.container-about-me h3 {
+
+h3 {
   font-size: 2.5rem;
-  color: #dad81f;
+  margin-bottom: 3rem;
 }
-.container-about-me p {
+
+p {
   font-family: monospace;
   font-size: 1.8rem;
   margin-bottom: 1.5rem;
@@ -239,19 +244,24 @@ body {
 .skills-container {
   min-height: 100vh;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  gap: 30px;
+  gap: 40px;
   color: #cac9e3f5;
 }
 .skills-container h3 {
   font-size: 2.5rem;
   color: #dad81f;
+  margin-bottom: 3rem;
 }
 .skills-container p {
   font-family: monospace;
   font-size: 1.8rem;
   margin-bottom: 1.5rem;
+}
+
+.skills-text {
+  width: 50%;
 }
 
 .skill-sets div {
@@ -361,11 +371,13 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 .project-text {
   font-size: 2.5rem;
   color: #dad81f;
+  margin-bottom: 3rem;
 }
 
 .images {
@@ -450,6 +462,12 @@ h2 {
   height: 50%;
   width: 80%;
   text-align: center;
+}
+.left-inner-container h2 {
+  font-size: 2rem;
+}
+.left-inner-container p {
+  font-size: 1.5rem;
 }
 
 form .field {

@@ -6,29 +6,30 @@
 //   -webkit-text-fill-color: transparent;
 // }
 
-
-
-
 .intro {
   height: 90vh;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   flex-grow: 1;
+  gap: 40px;
 }
 
 .about-container {
+  color: $white;
   font-size: 3rem;
-  color: $primary-color;
 }
 
-.name h2 {
-  position: relative;
-  width: max-content;
-  letter-spacing: 0.5rem;
+.name {
+  h2 {
+    position: relative;
+    width: max-content;
+    letter-spacing: 0.5rem;
+  }
 }
 
-.name h2::before, h2::after{
+.name h2::before,
+h2::after {
   content: "";
   position: absolute;
   top: 0;
@@ -37,16 +38,16 @@
   left: 0;
 }
 
-.name h2::before{
-  background: $secondary-color;
+.name h2::before {
+  background: #625668;
   animation: typewriter $type-writer-speed steps(20) 1s forwards;
 }
 
-.name h2::after{
+.name h2::after {
   width: 0.125em;
   background: $primary-color;
-  animation: typewriter $type-writer-speed steps(20) 1s forwards, blink 1s steps(20) infinite;
-
+  animation: typewriter $type-writer-speed steps(20) 1s forwards,
+    blink 1s steps(20) infinite;
 }
 
 .info {
@@ -56,6 +57,7 @@
   animation: fadeInUp 2s ease calc($type-writer-speed + 1.5s) forwards;
 }
 
+
 @keyframes typewriter {
   to {
     left: 100%;
@@ -63,7 +65,7 @@
 }
 
 @keyframes blink {
-  to{
+  to {
     background: transparent;
   }
 }
@@ -77,14 +79,15 @@
 
 .image-container {
   img {
-    height: 70vh;
-    object-fit: contain;
+    height: 60vh;
+    height: 12 rem;
+    width: auto;
   }
 }
 
 .landing-page-icons {
   display: flex;
-  gap: 20px;
+  gap: 45px;
   flex-direction: column;
   align-items: center;
   margin-left: 2em;

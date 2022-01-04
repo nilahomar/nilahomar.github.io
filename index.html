@@ -17,19 +17,25 @@
     <header class="nav-bar">
       <nav class="main-nav">
         <ul>
-          <li class="nav-list"><a class="nav-link" href="#">Home</a></li>
+          <li class="nav-list"><a class="nav-link" href="#intro">Home</a></li>
           <li class="nav-list"><a class="nav-link" href="#about-me">About Me</a></li>
           <li class="nav-list"><a class="nav-link" href="#skills">Skills</a></li>
-          <li class="nav-list"><a class="nav-link" href="#projects" class="projects">Projects</a></li>
+          <li class="nav-list"><a class="nav-link" href="#projects">Projects</a></li>
           <li class="nav-list"><a class="nav-link" href="#contact">Contact</a></li>
-
         </ul>
       </nav>
     </header>
 
     <main>
-      <div class="intro">
-
+      <div class="intro" id="intro">
+        <section class="image-container">
+          <img src="/src/img/nila2.jpeg" alt="profile picture">
+        </section>
+        <section class="landing-page-icons">
+          <a href="https://www.linkedin.com/in/nilahomar/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://github.com/nilahomar" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="mailto:nilahomar@gmail.com" target="_blank"><i class="fas fa-envelope-open"></i></a>
+        </section>
         <section class="about-container">
           <div class="name">
             <h2>Hey! I Am Nila Homar</h2>
@@ -43,15 +49,8 @@
           </div>
         </section>
 
-        <section class="image-container">
-          <img src="/src/img/nila2.jpeg" alt="profile picture">
-        </section>
 
-        <section class="landing-page-icons">
-          <a href="https://www.linkedin.com/in/nilahomar/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-          <a href="https://github.com/nilahomar" target="_blank"><i class="fab fa-github"></i></a>
-          <a href="mailto:nilahomar@gmail.com" target="_blank"><i class="fas fa-envelope-open"></i></a>
-        </section>
+       
       </div>
       <section id="about-me" class="about">
         <div class="container-about-me">
@@ -119,23 +118,24 @@
         </div>
       </section>
       <section class="projects" id="projects">
-      
         <div class="project-container">
           <div class="project-text">
             <h3>Projects</h3>
           </div>
+
+
           <div class="images">
-            
+
 
             <div class="image image-1" data-label="Star">
               <a class="image-link" href="#">
-                <img id="slide-left" src="/src/img/burger-project.png" alt="">
+                <img src="/src/img/burger-project.png" alt="">
               </a>
             </div>
 
             <div class="image image-2" data-label="Star">
               <a class="image-link" href="#">
-                <img id="slide-right"  src="/src/img/photo-project.png" alt="">
+                <img src="/src/img/photo-project.png" alt="">
               </a>
             </div>
 
@@ -149,7 +149,6 @@
               <div class="left-inner-container">
                 <h2>Let's Chat</h2>
                 <p>Whether you have a question, want to start a project or simply want to connect.</p>
-                <br>
                 <p>Feel free to send me a message in the contact form</p>
               </div>
             </div>
@@ -164,20 +163,20 @@
                     <a href="https://github.com/nilahomar" target="_blank"><i class="fab fa-github"></i></a>
                     <a href="mailto:nilahomar@gmail.com" target="_blank"><i class="fas fa-envelope-open"></i></a>
                   </div>
-                    <div class="field">
-                      <input type="text" id="name" name="name" placeholder="Your name" autofocus/>
-                      <label for="name">Name</label>
-                    </div>
-                    <div class="field">
-                      <input type="text" id="email" name="email" placeholder="name@domain.tld" />
-                      <label for="email">E-Mail</label>
-                    </div>
-                    <div class="field">
-                      <textarea id="msg" rows="4" name="msg" placeholder="You message..."></textarea>
-                      <label for="msg">Message</label>
-                    </div>
-                    <input class="button" type="submit" value="Send" />
-                 
+                  <div class="field">
+                    <input type="text" id="name" name="name" placeholder="Your name" />
+                    <label for="name">Name</label>
+                  </div>
+                  <div class="field">
+                    <input type="text" id="email" name="email" placeholder="name@domain.tld" />
+                    <label for="email">E-Mail</label>
+                  </div>
+                  <div class="field">
+                    <textarea id="msg" rows="4" name="msg" placeholder="You message..."></textarea>
+                    <label for="msg">Message</label>
+                  </div>
+                  <input class="button" type="submit" value="Send" />
+
                 </form>
               </div>
             </div>
@@ -187,5 +186,5 @@
     </main>
   </div>
 </body>
-<script src="/src/js/animation.js"></script>
+
 </html>

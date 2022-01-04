@@ -2,8 +2,19 @@ $primary-color: #cac9e3f5;
 $secondary-color:#000000;
 $icon-color:#9362ff;
 $yellow-color:#dad81f;
-$color-gradient: linear-gradient(to right, #f8f503 0%, #6f3be3 100%);
+$color-gradient: linear-gradient(to left bottom, #0e0d14, #2f3136, #53575b, #7c8082, #a7abac, #b4bcbc, #c1ccca, #d1ddd7, #cad4c5, #cac8b2, #cfbba3, #d4ac9c);
+$background-gradient: linear-gradient(to left bottom, #41343f, #473a46, #4e404e, #544755, #5a4d5d, #554a59, #504656, #4b4352, #3a3542, #2b2832, #1d1b23, #0e0d14);
 
 $font: "share-tech-mono";
 
 $type-writer-speed : 4s;
+
+//color palette
+$black: #0E0D14;
+$brown:#41343F;
+$light-brown:#625668;
+$gray:#596890;
+$beige:#A87A69;
+$light-beige:#D4AC9C;
+$purple:#6379DE;
+$white:#E5E7E7;
