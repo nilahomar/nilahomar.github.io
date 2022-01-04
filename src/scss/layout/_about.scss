@@ -4,17 +4,20 @@
   justify-content: center;
   align-items: center;
   gap: 80px;
-  font-size: 2rem;  
-  color: linear-gradient(to left bottom, #0e0d14, #2f3136, #53575b, #7c8082, #a7abac, #b4bcbc, #c1ccca, #d1ddd7, #cad4c5, #cac8b2, #cfbba3, #d4ac9c);;
+  font-size: 2rem;
+
 }
 
 .about-text{
   width: 100%;
-  color: linear-gradient(to left bottom, #0e0d14, #2f3136, #53575b, #7c8082, #a7abac, #b4bcbc, #c1ccca, #d1ddd7, #cad4c5, #cac8b2, #cfbba3, #d4ac9c);;
+
 }
   h3{
-    font-size: 2.5rem;
+    font-size: 3rem;
+    font-weight: 700;
     margin-bottom: 3rem;
+    color: $black;
+    
   }
   p{
     font-family: monospace;

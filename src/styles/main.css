@@ -76,7 +76,7 @@ body {
 }
 
 .about-container {
-  color: #E5E7E7;
+  color: #dad0d0;
   font-size: 3rem;
 }
 
@@ -145,13 +145,13 @@ h2::after {
 }
 .landing-page-icons .fab,
 .landing-page-icons .fas {
-  color: #9362ff;
+  color: #0E0D14;
   font-size: 3rem;
   transition: all 0.3s;
 }
 .landing-page-icons .fab:hover,
 .landing-page-icons .fas:hover {
-  color: #dad81f;
+  color: #625668;
   transform: scale(1.2);
 }
 
@@ -165,7 +165,7 @@ h2::after {
 }
 .nav-bar ul {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
   height: 10vh;
   gap: 7%;
@@ -173,7 +173,7 @@ h2::after {
 
 .nav-link {
   position: relative;
-  background: linear-gradient(to left bottom, #0e0d14, #2f3136, #53575b, #7c8082, #a7abac, #b4bcbc, #c1ccca, #d1ddd7, #cad4c5, #cac8b2, #cfbba3, #d4ac9c);
+  background: linear-gradient(to left bottom, #0e0d14, #302d32, #534e54, #7a7377, #a2999c, #b4a8aa, #c7b7b8, #dac6c5, #dabfbc, #d9b8b2, #d7b2a7, #d4ac9c);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 2.3rem;
@@ -198,21 +198,20 @@ h2::after {
   display: inline-block;
   border: 1px solid;
   padding: 5px 10px;
-  border-radius: 2px;
+  border-radius: 4px;
   color: #000000;
   margin-top: 1em;
-}
-.btn .fas {
-  background: linear-gradient(to right, #0d0f15 0%, #1f3fda 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 .btn-primary {
   background: #41343F;
 }
 .btn-primary a {
-  color: #000000;
+  color: #0E0D14;
+}
+
+.btn-primary:hover {
+  color: #625668;
 }
 
 .container-about-me {
@@ -222,17 +221,17 @@ h2::after {
   align-items: center;
   gap: 80px;
   font-size: 2rem;
-  color: linear-gradient(to left bottom, #0e0d14, #2f3136, #53575b, #7c8082, #a7abac, #b4bcbc, #c1ccca, #d1ddd7, #cad4c5, #cac8b2, #cfbba3, #d4ac9c);
 }
 
 .about-text {
   width: 100%;
-  color: linear-gradient(to left bottom, #0e0d14, #2f3136, #53575b, #7c8082, #a7abac, #b4bcbc, #c1ccca, #d1ddd7, #cad4c5, #cac8b2, #cfbba3, #d4ac9c);
 }
 
 h3 {
-  font-size: 2.5rem;
+  font-size: 3rem;
+  font-weight: 700;
   margin-bottom: 3rem;
+  color: #0E0D14;
 }
 
 p {
@@ -247,11 +246,11 @@ p {
   justify-content: space-around;
   align-items: center;
   gap: 40px;
-  color: #cac9e3f5;
 }
 .skills-container h3 {
   font-size: 2.5rem;
-  color: #dad81f;
+  color: #0E0D14;
+  font-weight: 700;
   margin-bottom: 3rem;
 }
 .skills-container p {
@@ -376,7 +375,8 @@ p {
 
 .project-text {
   font-size: 2.5rem;
-  color: #dad81f;
+  color: #0E0D14;
+  font-weight: 700;
   margin-bottom: 3rem;
 }
 
@@ -584,6 +584,7 @@ body {
   max-width: 1280px;
   padding: 0 24px;
   margin: 0 auto;
+  color: #dad0d0;
 }
 
 /*# sourceMappingURL=main.css.map */

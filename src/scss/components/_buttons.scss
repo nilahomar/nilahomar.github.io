@@ -2,19 +2,18 @@
   display: inline-block;
   border: 1px solid;
   padding:5px 10px;
-  border-radius:2px;
+  border-radius:4px;
   color: $secondary-color;
   margin-top: 1em;
-  .fas {
-    background: linear-gradient(to right, #0d0f15 0%, #1f3fda 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
  }
 
  .btn-primary {
   background: $brown;
    a{
-    color: $secondary-color;
+    color: $black;
    }   
+ }
+
+ .btn-primary:hover{
+   color: $light-brown;
  }

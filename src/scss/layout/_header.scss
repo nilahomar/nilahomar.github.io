@@ -94,14 +94,14 @@ h2::after {
 
   .fab,
   .fas {
-    color: $icon-color;
+    color: $black;
     font-size: 3rem;
     transition: all 0.3s;
   }
 
   .fab:hover,
   .fas:hover {
-    color: $yellow-color;
+    color: $light-brown;
     transform: scale(1.2);
   }
 }
