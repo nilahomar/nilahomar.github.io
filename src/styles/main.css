@@ -75,11 +75,24 @@ body {
   gap: 40px;
 }
 
+@media only screen and (max-width: 1080px) {
+  .intro {
+    flex-direction: column;
+    justify-content: unset;
+  }
+}
 .about-container {
   color: #dad0d0;
   font-size: 3rem;
 }
 
+@media only screen and (max-width: 1080px) {
+  .about-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 4rem;
+  }
+}
 .name h2 {
   position: relative;
   width: max-content;
@@ -130,12 +143,25 @@ h2::after {
     transform: translateY(0);
   }
 }
+.image-container {
+  order: -1;
+}
 .image-container img {
   height: 60vh;
-  height: 12 rem;
   width: auto;
 }
 
+@media only screen and (max-width: 1080px) {
+  .image-container {
+    margin-right: 12 rem;
+    order: 0;
+  }
+  .image-container img {
+    height: 50vh;
+    width: auto;
+    margin-right: 15rem;
+  }
+}
 .landing-page-icons {
   display: flex;
   gap: 45px;
@@ -151,10 +177,16 @@ h2::after {
 }
 .landing-page-icons .fab:hover,
 .landing-page-icons .fas:hover {
-  color: #625668;
+  color: #dad0d0;
   transform: scale(1.2);
 }
 
+@media only screen and (max-width: 1080px) {
+  .landing-page-icons {
+    flex-direction: row;
+    margin-right: 30%;
+  }
+}
 .nav-bar {
   margin-left: auto;
   margin-bottom: 1 em;
@@ -171,6 +203,11 @@ h2::after {
   gap: 7%;
 }
 
+@media only screen and (max-width: 767px) {
+  .nav-bar {
+    width: 100%;
+  }
+}
 .nav-link {
   position: relative;
   background: linear-gradient(to left bottom, #0e0d14, #302d32, #534e54, #7a7377, #a2999c, #b4a8aa, #c7b7b8, #dac6c5, #dabfbc, #d9b8b2, #d7b2a7, #d4ac9c);
@@ -203,6 +240,12 @@ h2::after {
   margin-top: 1em;
 }
 
+@media only screen and (max-width: 1080px) {
+  .btn {
+    width: 21%;
+    font-size: 2rem;
+  }
+}
 .btn-primary {
   background: #41343F;
 }
@@ -255,7 +298,7 @@ p {
 }
 .skills-container p {
   font-family: monospace;
-  font-size: 1.8rem;
+  font-size: 2rem;
   margin-bottom: 1.5rem;
 }
 
@@ -271,14 +314,14 @@ p {
   position: relative;
   width: 400px;
   height: 400px;
-  background-color: #151510;
+  background-color: #dad0d0;
 }
 
 .circle2 {
   transform: translate(18%, 18%);
   width: 300px;
   height: 300px;
-  background-color: #000000;
+  background-color: #dad0d0;
   box-shadow: 0px -13px 101px 6px rgba(230, 221, 15, 0.75);
   -webkit-box-shadow: 0px -13px 101px 6px rgba(53, 41, 67, 0.9);
   -moz-box-shadow: 0px -13px 101px 6px rgba(230, 221, 15, 0.75);
@@ -289,10 +332,10 @@ p {
   width: 200px;
   height: 200px;
   position: relative;
-  background-color: #101010;
-  box-shadow: 0px -9px 130px 6px rgba(230, 221, 15, 0.75);
-  -webkit-box-shadow: 0px -9px 130px 6px rgba(46, 191, 24, 0.75);
-  -moz-box-shadow: 0px -9px 130px 6px rgba(230, 221, 15, 0.75);
+  background-color: #dad0d0;
+  box-shadow: 0px -13px 101px 6px rgba(230, 221, 15, 0.75);
+  -webkit-box-shadow: 0px -13px 101px 6px rgba(53, 41, 67, 0.9);
+  -moz-box-shadow: 0px -13px 101px 6px rgba(230, 221, 15, 0.75);
 }
 .circle3 .skill-icons {
   position: absolute;

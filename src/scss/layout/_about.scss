@@ -5,22 +5,20 @@
   align-items: center;
   gap: 80px;
   font-size: 2rem;
-
 }
 
-.about-text{
+
+.about-text {
   width: 100%;
-
 }
-  h3{
-    font-size: 3rem;
-    font-weight: 700;
-    margin-bottom: 3rem;
-    color: $black;
-    
-  }
-  p{
-    font-family: monospace;
-    font-size: 1.8rem;
-    margin-bottom: 1.5rem;
-  }
+h3 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+  color: $black;
+}
+p {
+  font-family: monospace;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+}

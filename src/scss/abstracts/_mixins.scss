@@ -9,7 +9,7 @@ $justify-end : flex-end, $justify-center:center) {
 
 //Large Screen - 993 to 1170 screen size
 @mixin lg-screen{
-  @media only screen and (max-width: 1170px) {
+  @media only screen and (max-width: 1080px) {
       @content;
   }
 }

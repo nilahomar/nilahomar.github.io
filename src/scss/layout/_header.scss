@@ -15,10 +15,27 @@
   gap: 40px;
 }
 
+@media only screen and (max-width: 1080px) {
+  .intro {
+    flex-direction: column;
+    justify-content: unset;
+  }
+}
+
 .about-container {
   color: $white;
   font-size: 3rem;
 }
+
+@media only screen and (max-width: 1080px) {
+  .about-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 4rem;
+  }
+}
+
+
 
 .name {
   h2 {
@@ -57,7 +74,6 @@ h2::after {
   animation: fadeInUp 2s ease calc($type-writer-speed + 1.5s) forwards;
 }
 
-
 @keyframes typewriter {
   to {
     left: 100%;
@@ -78,10 +94,22 @@ h2::after {
 }
 
 .image-container {
+  order: -1;
   img {
     height: 60vh;
-    height: 12 rem;
     width: auto;
+  }
+}
+
+@media only screen and (max-width: 1080px) {
+  .image-container {
+    margin-right: 12 rem;
+    order: 0;
+    img {
+      height: 50vh;
+      width: auto;
+      margin-right: 15rem;
+    }
   }
 }
 
@@ -101,7 +129,14 @@ h2::after {
 
   .fab:hover,
   .fas:hover {
-    color: $light-brown;
+    color: $white;
     transform: scale(1.2);
+  }
+}
+
+@media only screen and (max-width: 1080px) {
+  .landing-page-icons {
+    flex-direction: row;
+    margin-right: 30%;
   }
 }

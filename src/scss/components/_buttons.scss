@@ -1,19 +1,26 @@
 .btn {
   display: inline-block;
   border: 1px solid;
-  padding:5px 10px;
-  border-radius:4px;
+  padding: 5px 10px;
+  border-radius: 4px;
   color: $secondary-color;
   margin-top: 1em;
- }
+}
 
- .btn-primary {
+@media only screen and (max-width: 1080px) {
+  .btn {
+  width: 21%;
+  font-size: 2rem;
+}
+}
+
+.btn-primary {
   background: $brown;
-   a{
+  a {
     color: $black;
-   }   
- }
+  }
+}
 
- .btn-primary:hover{
-   color: $light-brown;
- }
+.btn-primary:hover {
+  color: $light-brown;
+}
