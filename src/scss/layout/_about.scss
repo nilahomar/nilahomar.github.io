@@ -5,12 +5,20 @@
   align-items: center;
   gap: 80px;
   font-size: 2rem;
+  @include lg-screen{
+    flex-direction: column-reverse;
+    gap: 20px;
+    justify-content: unset;
+    align-items: unset;
+    width: 90%;
+    margin: 0 auto;
+  }
 }
+
 
 
 .about-text {
   width: 100%;
-}
 h3 {
   font-size: 3rem;
   font-weight: 700;
@@ -21,4 +29,5 @@ p {
   font-family: monospace;
   font-size: 1.8rem;
   margin-bottom: 1.5rem;
+}
 }

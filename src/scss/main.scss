@@ -1,4 +1,5 @@
 @import './abstracts/variables';
+@import './abstracts/mixins';
 @import './base/reset';
 @import './base/typography';
 @import './layout/header';
@@ -8,13 +9,21 @@
 @import './layout/skills';
 @import './layout/project';
 @import './layout/forms';
-@import './abstracts/mixins';
 
 
 
-body {
+
+main {
   max-width: 1280px;
   padding: 0 24px;
   margin: 0 auto;
   color: $white;
+}
+
+@include sm-screen{  
+body {
+  max-width: 1280px;
+  padding: 0;
+ 
+}
 }

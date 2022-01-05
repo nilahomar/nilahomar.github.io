@@ -5,19 +5,19 @@
   border-radius: 4px;
   color: $secondary-color;
   margin-top: 1em;
+  @include lg-screen{
+    width: 11%;
+    font-size: 2rem;
+  }
+
 }
 
-@media only screen and (max-width: 1080px) {
-  .btn {
-  width: 21%;
-  font-size: 2rem;
-}
-}
+
 
 .btn-primary {
-  background: $brown;
+  background: $background-gradient;
   a {
-    color: $black;
+    color: #b6b1b1;
   }
 }
 

@@ -13,22 +13,20 @@
   align-items: center;
   flex-grow: 1;
   gap: 40px;
-}
-
-@media only screen and (max-width: 1080px) {
-  .intro {
+  margin: 0 auto;
+  @include lg-screen{
     flex-direction: column;
     justify-content: unset;
+    align-items: unset;
+    width: 90%;
   }
 }
+
 
 .about-container {
   color: $white;
   font-size: 3rem;
-}
-
-@media only screen and (max-width: 1080px) {
-  .about-container {
+  @include lg-screen{
     display: flex;
     flex-direction: column;
     margin-top: 4rem;
@@ -37,11 +35,13 @@
 
 
 
+
 .name {
   h2 {
     position: relative;
     width: max-content;
     letter-spacing: 0.5rem;
+    font-size: 3rem;
   }
 }
 
@@ -96,7 +96,7 @@ h2::after {
 .image-container {
   order: -1;
   img {
-    height: 60vh;
+    height: 50vh;
     width: auto;
   }
 }
@@ -119,6 +119,10 @@ h2::after {
   flex-direction: column;
   align-items: center;
   margin-left: 2em;
+  @include lg-screen{
+    flex-direction: row;
+    margin-right: 30%;
+  }
 
   .fab,
   .fas {
@@ -134,9 +138,4 @@ h2::after {
   }
 }
 
-@media only screen and (max-width: 1080px) {
-  .landing-page-icons {
-    flex-direction: row;
-    margin-right: 30%;
-  }
-}
+
