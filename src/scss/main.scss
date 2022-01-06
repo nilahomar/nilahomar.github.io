@@ -20,6 +20,10 @@ main {
   color: $white;
 }
 
+.section-margin{
+  margin-top: 10rem;
+}
+
 @include sm-screen{  
 body {
   max-width: 1280px;

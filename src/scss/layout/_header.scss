@@ -12,34 +12,31 @@
   justify-content: space-between;
   align-items: center;
   flex-grow: 1;
-  gap: 40px;
+ 
   margin: 0 auto;
-  @include lg-screen{
+  @include lg-screen {
     flex-direction: column;
     justify-content: unset;
     align-items: unset;
+    gap: 20px;
     width: 90%;
   }
 }
 
-
 .about-container {
   color: $white;
   font-size: 3rem;
-  @include lg-screen{
+  @include lg-screen {
     display: flex;
     flex-direction: column;
     margin-top: 4rem;
   }
 }
 
-
-
-
 .name {
   h2 {
     position: relative;
-    width: max-content;
+    // width: max-content;
     letter-spacing: 0.5rem;
     font-size: 3rem;
   }
@@ -97,18 +94,16 @@ h2::after {
   order: -1;
   img {
     height: 50vh;
-    width: auto;
+    width: 370px;
+    object-fit: contain;
   }
 }
 
 @media only screen and (max-width: 1080px) {
   .image-container {
-    margin-right: 12 rem;
     order: 0;
     img {
-      height: 50vh;
       width: auto;
-      margin-right: 15rem;
     }
   }
 }
@@ -119,9 +114,9 @@ h2::after {
   flex-direction: column;
   align-items: center;
   margin-left: 2em;
-  @include lg-screen{
+  @include lg-screen {
     flex-direction: row;
-    margin-right: 30%;
+   
   }
 
   .fab,
@@ -137,5 +132,3 @@ h2::after {
     transform: scale(1.2);
   }
 }
-
-

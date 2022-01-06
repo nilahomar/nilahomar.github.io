@@ -62,7 +62,6 @@ html {
 
 body {
   font-family: "share-tech-mono";
-  line-height: 1.5;
   background-image: linear-gradient(to left bottom, #41343f, #473a46, #4e404e, #544755, #5a4d5d, #554a59, #504656, #4b4352, #3a3542, #2b2832, #1d1b23, #0e0d14);
 }
 
@@ -72,7 +71,6 @@ body {
   justify-content: space-between;
   align-items: center;
   flex-grow: 1;
-  gap: 40px;
   margin: 0 auto;
 }
 @media only screen and (max-width: 1080px) {
@@ -80,6 +78,7 @@ body {
     flex-direction: column;
     justify-content: unset;
     align-items: unset;
+    gap: 20px;
     width: 90%;
   }
 }
@@ -98,7 +97,6 @@ body {
 
 .name h2 {
   position: relative;
-  width: max-content;
   letter-spacing: 0.5rem;
   font-size: 3rem;
 }
@@ -152,18 +150,16 @@ h2::after {
 }
 .image-container img {
   height: 50vh;
-  width: auto;
+  width: 370px;
+  object-fit: contain;
 }
 
 @media only screen and (max-width: 1080px) {
   .image-container {
-    margin-right: 12 rem;
     order: 0;
   }
   .image-container img {
-    height: 50vh;
     width: auto;
-    margin-right: 15rem;
   }
 }
 .landing-page-icons {
@@ -176,7 +172,6 @@ h2::after {
 @media only screen and (max-width: 1080px) {
   .landing-page-icons {
     flex-direction: row;
-    margin-right: 30%;
   }
 }
 .landing-page-icons .fab,
@@ -192,12 +187,10 @@ h2::after {
 }
 
 .nav-bar {
-  margin-left: auto;
-  margin-bottom: 1 em;
   background: #0E0D14;
   position: sticky;
   top: 0;
-  z-index: 1;
+  z-index: 3;
 }
 .nav-bar ul {
   display: flex;
@@ -238,15 +231,34 @@ h2::after {
 .btn {
   display: inline-block;
   border: 1px solid;
-  padding: 5px 10px;
   border-radius: 4px;
+  text-align: center;
   color: #000000;
   margin-top: 1em;
+  width: 20%;
 }
 @media only screen and (max-width: 1080px) {
   .btn {
-    width: 11%;
+    max-width: 12%;
     font-size: 2rem;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .btn {
+    max-width: 13%;
+    font-size: 2rem;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .btn {
+    max-width: 17%;
+    font-size: 2rem;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .btn {
+    max-width: 20%;
+    font-size: 1.5rem;
   }
 }
 
@@ -282,6 +294,7 @@ h2::after {
 
 .about-text {
   width: 100%;
+  margin-top: 10rem;
 }
 .about-text h3 {
   font-size: 3rem;
@@ -332,6 +345,24 @@ h2::after {
 
 .skill-sets div {
   border-radius: 50%;
+}
+@media only screen and (max-width: 1080px) {
+  .skill-sets {
+    width: 50%;
+    align-self: center;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .skill-sets {
+    width: 60%;
+    align-self: center;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .skill-sets {
+    width: 100%;
+    align-self: center;
+  }
 }
 
 .circle1 {
@@ -436,24 +467,34 @@ h2::after {
   min-height: 100vh;
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-direction: column;
 }
-
 .project-text {
   font-size: 2.5rem;
   color: #0E0D14;
   font-weight: 700;
   margin-bottom: 3rem;
 }
+@media only screen and (max-width: 767px) {
+  .project-text {
+    margin-left: 3rem;
+  }
+}
 
 .images {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 30px;
 }
+@media only screen and (max-width: 992px) {
+  .images {
+    align-items: center;
+    justify-content: center;
+  }
+}
 .images img {
-  width: 100%;
-  height: 100%;
   object-fit: contain;
   overflow: hidden;
 }
@@ -464,20 +505,28 @@ h2::after {
   position: relative;
   overflow: hidden;
   width: 600px;
-  height: 370px;
+  height: 300px;
 }
 
 .contact {
   height: 100vh;
   display: flex;
   justify-content: center;
+  flex-direction: column;
   align-items: center;
+}
+.contact h3 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+  color: #0E0D14;
 }
 
 .contact-container {
   background-color: linear-gradient(to left bottom, #0e0d14, #302d32, #534e54, #7a7377, #a2999c, #b4a8aa, #c7b7b8, #dac6c5, #dabfbc, #d9b8b2, #d7b2a7, #d4ac9c);
   border-radius: 5px;
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  position: relative;
   overflow: hidden;
   width: 90%;
   max-width: 100%;
@@ -535,7 +584,8 @@ form .field {
   position: relative;
   margin-bottom: 1.5rem;
 }
-form .field input[type=text], form .field textarea {
+form .field input[type=text],
+form .field textarea {
   border: none;
   width: 100%;
   height: 64px;
@@ -608,7 +658,8 @@ textarea {
   font-size: 1rem;
 }
 
-input:focus, textarea:focus {
+input:focus,
+textarea:focus {
   outline: 1px solid #41343F;
 }
 
@@ -617,12 +668,12 @@ input:focus, textarea:focus {
     display: none;
   }
 
-  .lg-view {
+  .large-view {
     display: none;
   }
 }
 @media only screen and (min-width: 600px) {
-  .sm-view {
+  .small-view {
     display: none;
   }
 }
@@ -635,6 +686,10 @@ main {
   padding: 0 24px;
   margin: 0 auto;
   color: #dad0d0;
+}
+
+.section-margin {
+  margin-top: 10rem;
 }
 
 @media only screen and (max-width: 767px) {

@@ -2,7 +2,14 @@
   min-height: 100vh;
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-direction: column;
+  @include lg-screen {
+    
+  }
+  @include md-screen{
+ 
+  }
 }
 
 .project-text {
@@ -10,17 +17,24 @@
   color: $black;
   font-weight: 700;
   margin-bottom: 3rem;
+  @include sm-screen {
+    margin-left: 3rem;
+  }
 }
 
 .images {
   display: flex;
   flex-wrap: wrap;
-
+  justify-content: center;
   gap: 30px;
+  @include md-screen {
+    align-items: center;
+    justify-content: center;
+  }
 
   img {
-    width: 100%;
-    height: 100%;
+    // width: 100%;
+    // height: 100%;
     object-fit: contain;
     overflow: hidden;
   }
@@ -31,5 +45,8 @@
   position: relative;
   overflow: hidden;
   width: 600px;
-  height: 370px;
+  height: 300px;
+  // @include lg-screen {
+  //   height: 370px;
+  // }
 }
