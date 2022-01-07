@@ -20,9 +20,11 @@ main {
   color: $white;
 }
 
-.section-margin{
-  margin-top: 10rem;
-}
+// @include lg-screen{
+//   section{
+//     margin-top: 10rem;
+//   }
+// }
 
 @include sm-screen{  
 body {

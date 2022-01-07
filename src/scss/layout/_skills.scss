@@ -25,41 +25,41 @@
 
 .skills-text {
   width: 50%;
-  @include lg-screen{
+  @include lg-screen {
     width: 90%;
   }
 }
 
-.skill-sets {
-  div {
-    border-radius: 50%;
-  }
-  @include lg-screen{
-    width: 50%;
-    align-self: center;
-  }
-  @include sm-screen{
-    width: 60%;
-    align-self: center;
-  }
-  @include xs-screen{
-    width: 100%;
-    align-self: center;
-  }
-}
+// .skill-sets {
+//   div {
+//     border-radius: 50%;
+//   }
+//   @include lg-screen{
+//     width: 50%;
+//     align-self: center;
+//   }
+//   @include sm-screen{
+//     width: 60%;
+//     align-self: center;
+//   }
+//   @include xs-screen{
+//     width: 100%;
+//     align-self: center;
+//   }
+// }
 
 .circle1 {
   position: relative;
   width: 400px;
   height: 400px;
-  background-color: $white;
+  background-color: #0e0d14;
 }
 
 .circle2 {
   transform: translate(18%, 18%);
   width: 300px;
   height: 300px;
-  background-color: $white;
+  background-color: #090909;
   box-shadow: 0px -13px 101px 6px rgba(230, 221, 15, 0.75);
   -webkit-box-shadow: 0px -13px 101px 6px rgb(53 41 67 / 90%);
   -moz-box-shadow: 0px -13px 101px 6px rgba(230, 221, 15, 0.75);
@@ -70,75 +70,107 @@
   width: 200px;
   height: 200px;
   position: relative;
-  background-color: $white;
+  background-color: #141219;
   box-shadow: 0px -13px 101px 6px rgba(230, 221, 15, 0.75);
   -webkit-box-shadow: 0px -13px 101px 6px rgb(53 41 67 / 90%);
   -moz-box-shadow: 0px -13px 101px 6px rgba(230, 221, 15, 0.75);
-  .skill-icons {
-    position: absolute;
-    font-size: 4rem;
+}
+.skill-icons {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 55px;
+  height: 55px;
+  border-radius: 50px;
+  background-image: $background-gradient;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  animation: zoom-in-zoom-out 3s ease-out infinite;
+}
+
+@keyframes zoom-in-zoom-out {
+  0% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1.2, 1.2);
+  }
+  100% {
+    transform: scale(1, 1);
   }
 }
 
 .icon1 {
-  top: -2px;
-  left: 82px;
-  color: #dd4b24;
+  top: 0px;
+  left: 0px;
+  color: #f494e5;
 }
 
 .icon2 {
-  bottom: -10px;
-  left: 82px;
-  color: #2791eb;
+  top: 0px;
+  right: 0px;
+  color: #fe5d39;
 }
 
 .icon3 {
-  top: 70px;
-  left: 82px;
-  color: #efd81d;
+  bottom: 0px;
+  left: 0px;
+  color: white;
 }
 
 .icon4 {
-  top: -107px;
-  left: 85px;
-  color: #5ccdea;
+  bottom: 0px;
+  right: 0px;
+  color: #f29100;
 }
 .icon5 {
   top: 0;
-  left: 180px;
-  color: #8512f3;
+  left: 0px;
+  color: #5ccdea;
 }
 .icon6 {
-  left: -92px;
-  top: 72px;
-  color: #d61b15;
+  top: 0;
+  right: 0px;
+  color: #8512f3;
 }
 
 .icon7 {
   bottom: 0px;
-  right: 180px;
-  color: #5e9255;
+  right: 0px;
+  color: #d61b15;
 }
 
 .icon8 {
-  bottom: -7px;
-  left: 180px;
-  color: #cf649a;
+  bottom: 0px;
+  left: 0px;
+  color: #5e9255;
 }
 
 .icon9 {
-  top: -15px;
-  left: -10px;
+  top: 0px;
+  left: 0px;
   color: #c13533;
 }
 .icon10 {
-  right: -92px;
-  top: 72px;
-  color: white;
+  top: 0px;
+  right: 0px;
+  color: #2791eb;
 }
 
 .icon11 {
-  bottom: -107px;
-  left: 85px;
-  color: #f29100;
+  top: 40%;
+  left: 40%;
+  color: #efd81d;
+}
+
+.icon12 {
+  bottom: 0px;
+  left: 0px;
+  color:#f25cf2;
+}
+
+.icon13 {
+  bottom: 0px;
+  right: 0px;
+  color:#361a6f;
 }

@@ -93,16 +93,16 @@ form {
     transition: 0.5s ease-in-out;
     text-align: center;
     padding: 2.5rem 0;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+    @include sm-screen{
+      font-size: 1rem;
+    }
   }
 }
 
-.social-container {
-  margin-bottom: 1rem;
-}
 
-form #msg {
-  height: 60px;
+
+form #msg {  
   transition: all 333ms ease-in-out;
   padding-top: 2rem;
 }
@@ -121,7 +121,7 @@ form .field:hover label {
 }
 form input[type="submit"] {
   background: $background-gradient;
-  color: $black;
+  color: $white;
   -webkit-appearance: none;
   border: none;
   position: relative;
@@ -136,6 +136,7 @@ form input[type="submit"] {
 form input[type="submit"]:hover,
 form input[type="submit"]:focus {
   background: $color-gradient;
+  color: $black;
 }
 
 input,

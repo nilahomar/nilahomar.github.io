@@ -27,6 +27,7 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
+  
   @include md-screen {
     align-items: center;
     justify-content: center;
@@ -39,13 +40,15 @@
     overflow: hidden;
   }
 }
+
+
+
+
+
 .image {
   max-width: 500px;
-  min-height: 500px;
   position: relative;
   overflow: hidden;
-  width: 600px;
-  height: 300px;
   // @include lg-screen {
   //   height: 370px;
   // }

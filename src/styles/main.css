@@ -71,14 +71,13 @@ body {
   justify-content: space-between;
   align-items: center;
   flex-grow: 1;
-  margin: 0 auto;
 }
 @media only screen and (max-width: 1080px) {
   .intro {
     flex-direction: column;
     justify-content: unset;
     align-items: unset;
-    gap: 20px;
+    gap: 25px;
     width: 90%;
   }
 }
@@ -94,11 +93,16 @@ body {
     margin-top: 4rem;
   }
 }
+@media only screen and (max-width: 767px) {
+  .about-container {
+    font-size: 2rem;
+  }
+}
 
 .name h2 {
   position: relative;
+  width: max-content;
   letter-spacing: 0.5rem;
-  font-size: 3rem;
 }
 
 .name h2::before,
@@ -128,6 +132,11 @@ h2::after {
   transform: translateY(3rem);
   animation: fadeInUp 2s ease 5.5s forwards;
 }
+@media only screen and (max-width: 1080px) {
+  .info {
+    margin-bottom: 3rem;
+  }
+}
 
 @keyframes typewriter {
   to {
@@ -148,20 +157,22 @@ h2::after {
 .image-container {
   order: -1;
 }
+@media only screen and (max-width: 1080px) {
+  .image-container {
+    order: 0;
+  }
+}
 .image-container img {
   height: 50vh;
   width: 370px;
   object-fit: contain;
 }
-
 @media only screen and (max-width: 1080px) {
-  .image-container {
-    order: 0;
-  }
   .image-container img {
     width: auto;
   }
 }
+
 .landing-page-icons {
   display: flex;
   gap: 45px;
@@ -178,17 +189,18 @@ h2::after {
 .landing-page-icons .fas {
   color: #0E0D14;
   font-size: 3rem;
-  transition: all 0.3s;
+  transition: all 0.3s ease-in-out;
 }
 .landing-page-icons .fab:hover,
 .landing-page-icons .fas:hover {
   color: #dad0d0;
-  transform: scale(1.2);
+  transform: scale(1.5);
 }
 
 .nav-bar {
   background: #0E0D14;
-  position: sticky;
+  position: fixed;
+  width: 100%;
   top: 0;
   z-index: 3;
 }
@@ -343,40 +355,18 @@ h2::after {
   }
 }
 
-.skill-sets div {
-  border-radius: 50%;
-}
-@media only screen and (max-width: 1080px) {
-  .skill-sets {
-    width: 50%;
-    align-self: center;
-  }
-}
-@media only screen and (max-width: 767px) {
-  .skill-sets {
-    width: 60%;
-    align-self: center;
-  }
-}
-@media only screen and (max-width: 575px) {
-  .skill-sets {
-    width: 100%;
-    align-self: center;
-  }
-}
-
 .circle1 {
   position: relative;
   width: 400px;
   height: 400px;
-  background-color: #dad0d0;
+  background-color: #0e0d14;
 }
 
 .circle2 {
   transform: translate(18%, 18%);
   width: 300px;
   height: 300px;
-  background-color: #dad0d0;
+  background-color: #090909;
   box-shadow: 0px -13px 101px 6px rgba(230, 221, 15, 0.75);
   -webkit-box-shadow: 0px -13px 101px 6px rgba(53, 41, 67, 0.9);
   -moz-box-shadow: 0px -13px 101px 6px rgba(230, 221, 15, 0.75);
@@ -387,80 +377,112 @@ h2::after {
   width: 200px;
   height: 200px;
   position: relative;
-  background-color: #dad0d0;
+  background-color: #141219;
   box-shadow: 0px -13px 101px 6px rgba(230, 221, 15, 0.75);
   -webkit-box-shadow: 0px -13px 101px 6px rgba(53, 41, 67, 0.9);
   -moz-box-shadow: 0px -13px 101px 6px rgba(230, 221, 15, 0.75);
 }
-.circle3 .skill-icons {
+
+.skill-icons {
   position: absolute;
-  font-size: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 55px;
+  height: 55px;
+  border-radius: 50px;
+  background-image: linear-gradient(to left bottom, #41343f, #473a46, #4e404e, #544755, #5a4d5d, #554a59, #504656, #4b4352, #3a3542, #2b2832, #1d1b23, #0e0d14);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  animation: zoom-in-zoom-out 3s ease-out infinite;
 }
 
+@keyframes zoom-in-zoom-out {
+  0% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1.2, 1.2);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
 .icon1 {
-  top: -2px;
-  left: 82px;
-  color: #dd4b24;
+  top: 0px;
+  left: 0px;
+  color: #f494e5;
 }
 
 .icon2 {
-  bottom: -10px;
-  left: 82px;
-  color: #2791eb;
+  top: 0px;
+  right: 0px;
+  color: #fe5d39;
 }
 
 .icon3 {
-  top: 70px;
-  left: 82px;
-  color: #efd81d;
+  bottom: 0px;
+  left: 0px;
+  color: white;
 }
 
 .icon4 {
-  top: -107px;
-  left: 85px;
-  color: #5ccdea;
+  bottom: 0px;
+  right: 0px;
+  color: #f29100;
 }
 
 .icon5 {
   top: 0;
-  left: 180px;
-  color: #8512f3;
+  left: 0px;
+  color: #5ccdea;
 }
 
 .icon6 {
-  left: -92px;
-  top: 72px;
-  color: #d61b15;
+  top: 0;
+  right: 0px;
+  color: #8512f3;
 }
 
 .icon7 {
   bottom: 0px;
-  right: 180px;
-  color: #5e9255;
+  right: 0px;
+  color: #d61b15;
 }
 
 .icon8 {
-  bottom: -7px;
-  left: 180px;
-  color: #cf649a;
+  bottom: 0px;
+  left: 0px;
+  color: #5e9255;
 }
 
 .icon9 {
-  top: -15px;
-  left: -10px;
+  top: 0px;
+  left: 0px;
   color: #c13533;
 }
 
 .icon10 {
-  right: -92px;
-  top: 72px;
-  color: white;
+  top: 0px;
+  right: 0px;
+  color: #2791eb;
 }
 
 .icon11 {
-  bottom: -107px;
-  left: 85px;
-  color: #f29100;
+  top: 40%;
+  left: 40%;
+  color: #efd81d;
+}
+
+.icon12 {
+  bottom: 0px;
+  left: 0px;
+  color: #f25cf2;
+}
+
+.icon13 {
+  bottom: 0px;
+  right: 0px;
+  color: #361a6f;
 }
 
 .project-container {
@@ -501,11 +523,8 @@ h2::after {
 
 .image {
   max-width: 500px;
-  min-height: 500px;
   position: relative;
   overflow: hidden;
-  width: 600px;
-  height: 300px;
 }
 
 .contact {
@@ -603,15 +622,15 @@ form label {
   transition: 0.5s ease-in-out;
   text-align: center;
   padding: 2.5rem 0;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
-
-.social-container {
-  margin-bottom: 1rem;
+@media only screen and (max-width: 767px) {
+  form label {
+    font-size: 1rem;
+  }
 }
 
 form #msg {
-  height: 60px;
   transition: all 333ms ease-in-out;
   padding-top: 2rem;
 }
@@ -631,7 +650,7 @@ form .field:hover label {
 
 form input[type=submit] {
   background: linear-gradient(to left bottom, #41343f, #473a46, #4e404e, #544755, #5a4d5d, #554a59, #504656, #4b4352, #3a3542, #2b2832, #1d1b23, #0e0d14);
-  color: #0E0D14;
+  color: #dad0d0;
   -webkit-appearance: none;
   border: none;
   position: relative;
@@ -646,6 +665,7 @@ form input[type=submit] {
 form input[type=submit]:hover,
 form input[type=submit]:focus {
   background: linear-gradient(to left bottom, #0e0d14, #302d32, #534e54, #7a7377, #a2999c, #b4a8aa, #c7b7b8, #dac6c5, #dabfbc, #d9b8b2, #d7b2a7, #d4ac9c);
+  color: #0E0D14;
 }
 
 input,
@@ -686,10 +706,6 @@ main {
   padding: 0 24px;
   margin: 0 auto;
   color: #dad0d0;
-}
-
-.section-margin {
-  margin-top: 10rem;
 }
 
 @media only screen and (max-width: 767px) {
