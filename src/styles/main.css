@@ -391,22 +391,10 @@ h2::after {
   width: 55px;
   height: 55px;
   border-radius: 50px;
-  background-image: linear-gradient(to left bottom, #41343f, #473a46, #4e404e, #544755, #5a4d5d, #554a59, #504656, #4b4352, #3a3542, #2b2832, #1d1b23, #0e0d14);
+  background-color: #0E0D14;
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-  animation: zoom-in-zoom-out 3s ease-out infinite;
 }
 
-@keyframes zoom-in-zoom-out {
-  0% {
-    transform: scale(1, 1);
-  }
-  50% {
-    transform: scale(1.2, 1.2);
-  }
-  100% {
-    transform: scale(1, 1);
-  }
-}
 .icon1 {
   top: 0px;
   left: 0px;
