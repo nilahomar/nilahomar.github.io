@@ -12,14 +12,10 @@
   justify-content: space-between;
   align-items: center;
   flex-grow: 1;
-
-  // margin: 0 auto;
   @include lg-screen {
     flex-direction: column;
-    justify-content: unset;
-    align-items: unset;
-    gap: 25px;
-    width: 90%;
+    align-items: center;
+    margin-top: 4rem;
   }
 }
 
@@ -29,6 +25,8 @@
   @include lg-screen {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    text-align: center;
     margin-top: 4rem;
   
   }
@@ -140,7 +138,7 @@ h2::after {
 
   .fab:hover,
   .fas:hover {
-    color: $white;
+    color: rgba(51, 176, 161, 0.88);
     transform: scale(1.5);
   }
 }

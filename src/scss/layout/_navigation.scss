@@ -1,21 +1,14 @@
-.nav-bar {
+.main-nav {
   background: $black;
   position: fixed;
   width: 100%;
   top: 0;
   z-index: 3;
-  ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 10vh;
-    gap: 7%;
-  }
-}
-@media only screen and (max-width: 767px){
-  .nav-bar{
-    width: 100%;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  gap: 7%;
 }
 
 .nav-link {
@@ -26,7 +19,7 @@
   font-size: 2.3rem;
 }
 
-.nav-link::after{
+.nav-link::after {
   content: "";
   position: absolute;
   background-color: pink;
@@ -34,11 +27,104 @@
   width: 0%;
   left: 0;
   bottom: -10px;
-  transition:all 0.3s;
+  transition: all 0.3s;
 }
 
-.nav-link:hover::after{
+.nav-link:hover::after {
   width: 100%;
 }
 
+@include sm-screen{
+  .line1 {
+    width: 15px;
+    height: 3px;
+    margin: 5px 0;
+    background: $color-gradient;
+  }
 
+  .line2 {
+    width: 30px;
+    height: 3px;
+    background: $color-gradient;
+  }
+
+  .line3 {
+    width: 15px;
+    height: 3px;
+    margin: 5px 0;
+    margin-left: 15px;
+    background: $color-gradient;
+  }
+
+  .burger-menu-icon {
+    cursor: pointer;
+    z-index: 999;
+    position: fixed;
+    right: 0;
+    top: 0;
+    background: $black;
+    padding: 1.2rem;
+    border-radius: 0% 0% 0% 40%;
+  }
+
+  .main-nav {
+    width: 24rem;
+    height: 100vh;
+    background-color: $black;
+    position: fixed;
+    top: 0;
+    padding: 5rem;
+    right: -26rem;
+    z-index: 998;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: unset;
+    gap: 4%;
+    transition: all 650ms ease-in-out;
+  }
+
+  .main-nav.active {
+    right: 0;
+  }
+
+  .nav-link {
+    opacity: 0;
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    color: #cecece;
+    letter-spacing: 1.5px;
+  }
+
+  .nav-link:hover {
+    color: rgba(249, 105, 14, 1);
+  }
+
+  .toggle {
+    background: none;
+  }
+
+  .toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px) scaleX(2);
+  }
+
+  .toggle .line2 {
+    opacity: 0;
+  }
+
+  .toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px) scaleX(2);
+    margin-left: 0px;
+  }
+
+  @keyframes navLinkAnimate {
+    from {
+      opacity: 0;
+      transform: translate(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translate(0px);
+    }
+  }
+}

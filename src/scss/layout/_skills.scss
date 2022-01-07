@@ -18,8 +18,9 @@
   }
   p {
     font-family: monospace;
-    font-size: 2rem;
+    font-size: 1.7rem;
     margin-bottom: 1.5rem;
+    text-align: justify;
   }
 }
 
@@ -50,7 +51,7 @@
 
 .skill-sets {
   div {
-    border-radius: 20px;
+    border-radius: 50%;
   }
 }
 
@@ -91,41 +92,41 @@
   border-radius: 50px;
   background-color: $black;
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-  // animation: zoom-in-zoom-out 3s ease-out infinite;
+  animation: zoom-in-zoom-out 3s ease-out infinite;
 }
 
-// @keyframes zoom-in-zoom-out {
-//   0% {
-//     transform: scale(1, 1);
-//   }
-//   50% {
-//     transform: scale(1.2, 1.2);
-//   }
-//   100% {
-//     transform: scale(1, 1);
-//   }
-// }
+@keyframes zoom-in-zoom-out {
+  0% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1.2, 1.2);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
 
 .icon1 {
   top: 0px;
-  left: 0px;
+  left: 170px;
   color: #f494e5;
 }
 
 .icon2 {
-  top: 0px;
-  right: 0px;
+  bottom: 0px;
+  right: 170px;
   color: #fe5d39;
 }
 
 .icon3 {
-  bottom: 0px;
+  top: 170px;
   left: 0px;
   color: white;
 }
 
 .icon4 {
-  bottom: 0px;
+  top: 170px;
   right: 0px;
   color: #f29100;
 }
@@ -164,8 +165,8 @@
 }
 
 .icon11 {
-  top: 40%;
-  left: 40%;
+  top: 75px;
+  left: 75px;
   color: #efd81d;
 }
 
@@ -179,4 +180,8 @@
   bottom: 0px;
   right: 0px;
   color:#361a6f;
+}
+
+.icon1, .icon2, .icon3, .icon4 {
+  z-index: 1;
 }
