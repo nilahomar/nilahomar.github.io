@@ -397,39 +397,76 @@ h2::after {
   background: #625668;
 }
 
-.container-about-me {
-  min-height: 100vh;
+.about {
   display: flex;
   justify-content: center;
+  flex-direction: column;
   align-items: center;
-  gap: 80px;
-  font-size: 2rem;
+}
+.about .about-me {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 15rem;
+  margin-bottom: 5rem;
+}
+.about .about-me h3 {
+  font-size: 8rem;
+  font-weight: 700;
+  color: #FA9129;
 }
 @media only screen and (max-width: 1080px) {
-  .container-about-me {
-    flex-direction: column-reverse;
-    gap: 20px;
-    justify-content: unset;
-    align-items: unset;
-    width: 90%;
-    margin: 0 auto;
+  .about .about-me h3 {
+    font-size: 7rem;
   }
 }
-
-.about-text {
+@media only screen and (max-width: 767px) {
+  .about .about-me h3 {
+    font-size: 4rem;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .about .about-me h3 {
+    font-size: 3rem;
+  }
+}
+.about .about-svg {
+  width: 50%;
+}
+.about .about-text {
   width: 100%;
-  margin-top: 10rem;
 }
-.about-text h3 {
-  font-size: 3rem;
-  font-weight: 700;
-  margin-bottom: 3rem;
-  color: #1b1b22;
-}
-.about-text p {
-  font-size: 1.7rem;
+.about .about-text p {
+  font-size: 2rem;
   margin-bottom: 1.5rem;
   text-align: justify;
+}
+.about .about-text p a {
+  color: #33b0a1e0;
+}
+.about .about-text p a:hover {
+  color: #FA9129;
+}
+@media only screen and (max-width: 575px) {
+  .about .about-text p {
+    font-size: 2rem;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .about .about-text p {
+    font-size: 2rem;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .about .about-text p {
+    font-size: 2rem;
+  }
+}
+@media only screen and (max-width: 1080px) {
+  .about .about-text p {
+    font-size: 2rem;
+  }
 }
 
 .skills-container {
@@ -855,6 +892,15 @@ main {
 
 h3 {
   text-align: center;
+}
+
+.line-breaker {
+  margin-top: 15rem;
+  margin-bottom: 15rem;
+  background: linear-gradient(to right, #1b1b22, #C25C20);
+  width: 100%;
+  position: relative;
+  padding: 1px;
 }
 
 /*# sourceMappingURL=main.css.map */

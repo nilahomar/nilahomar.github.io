@@ -1,35 +1,68 @@
-.container-about-me {
-  min-height: 100vh;
+.about {
   display: flex;
   justify-content: center;
+  flex-direction: column;
   align-items: center;
-  gap: 80px;
-  font-size: 2rem;
- 
-  @include lg-screen{
-    flex-direction: column-reverse;
-    gap: 20px;
-    justify-content: unset;
-    align-items: unset;
-    width: 90%;
-    margin: 0 auto;
+
+  .about-me {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 15rem;
+    margin-bottom: 5rem;
+
+    h3 {
+      font-size: 8rem;
+      font-weight: 700;
+      color: $orange;
+
+      @include lg-screen {
+        font-size: 7rem;
+      }
+      @include sm-screen {
+        font-size: 4rem;
+      }
+      @include xs-screen {
+        font-size: 3rem;
+      }
+    }
   }
-}
 
+  .about-svg {
+    width: 50%;
+  }
 
+  .about-text {
+    width: 100%;
+    p {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+      text-align: justify;
 
-.about-text {
-  width: 100%;
-  margin-top: 10rem;
-h3 {
-  font-size: 3rem;
-  font-weight: 700;
-  margin-bottom: 3rem;
-  color: $black;
-}
-p {
-  font-size: 1.7rem;
-  margin-bottom: 1.5rem;
-  text-align: justify;
-}
+      a {
+        color: $green;
+      }
+
+      a:hover {
+        color: $orange;
+      }
+
+      @include xs-screen {
+        font-size: 2rem;
+      }
+
+      @include sm-screen {
+        font-size: 2rem;
+      }
+
+      @include md-screen {
+        font-size: 2rem;
+      }
+
+      @include lg-screen {
+        font-size: 2rem;
+      }
+    }
+  }
 }

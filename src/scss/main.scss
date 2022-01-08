@@ -42,3 +42,12 @@ h3 {
   // 	$dot-color;
   // background-size: $dot-space $dot-space;
 }
+
+.line-breaker {
+  margin-top: 15rem;
+  margin-bottom: 15rem;
+  background: linear-gradient( to right, $black, $brick-red );
+  width: 100%;
+  position: relative;
+  padding: 1px;
+}
