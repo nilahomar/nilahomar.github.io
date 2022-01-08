@@ -1,17 +1,14 @@
-@import './abstracts/variables';
-@import './abstracts/mixins';
-@import './base/reset';
-@import './base/typography';
-@import './layout/header';
-@import './layout/navigation';
-@import './components/buttons';
-@import './layout/about';
-@import './layout/skills';
-@import './layout/project';
-@import './layout/forms';
-
-
-
+@import "./abstracts/variables";
+@import "./abstracts/mixins";
+@import "./base/reset";
+@import "./base/typography";
+@import "./layout/header";
+@import "./layout/navigation";
+@import "./components/buttons";
+@import "./layout/about";
+@import "./layout/skills";
+@import "./layout/project";
+@import "./layout/forms";
 
 main {
   max-width: 1280px;
@@ -26,14 +23,22 @@ main {
 //   }
 // }
 
-@include sm-screen{  
-body {
-  max-width: 1280px;
-  padding: 0;
- 
-}
+// @include sm-screen {
+//   body {
+//     max-width: 1280px;
+//     padding: 0;
+//   }
+// }
+
+h3 {
+  text-align: center;
 }
 
-h3{
-  text-align: center;
+.wrapper {
+  // background-image: linear-gradient(to bottom left,rgba(17,16,16,0.582),rgba(12,8,24,0.904));
+  // background:
+  // 	linear-gradient(90deg, $bg-color ($dot-space - $dot-size), transparent 1%) center,
+  // 	linear-gradient($bg-color ($dot-space - $dot-size), transparent 1%) center,
+  // 	$dot-color;
+  // background-size: $dot-space $dot-space;
 }

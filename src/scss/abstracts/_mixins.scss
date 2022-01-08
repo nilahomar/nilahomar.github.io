@@ -21,14 +21,14 @@ $justify-end : flex-end, $justify-center:center) {
   }
 }
 
-//Medium Screen - 575 to 767 screen size
-@mixin sm-screen{
+//Small Screen - 575 to 767 screen size
+@mixin sm-screen {
   @media only screen and (max-width: 767px) {
       @content;
   }
 }
 
-//Medium Screen - below 575 screen size
+//Extra Small Screen - below 575 screen size
 @mixin xs-screen{
   @media only screen and (max-width: 575px) {
       @content;

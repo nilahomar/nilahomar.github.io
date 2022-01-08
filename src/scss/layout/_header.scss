@@ -7,31 +7,50 @@
 // }
 
 .intro {
-  height: 90vh;
+  height: 100vh;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   flex-grow: 1;
-  @include lg-screen {
-    flex-direction: column;
-    align-items: center;
-    margin-top: 4rem;
+  gap: 40px;
+  position: relative;
+  @include sm-screen {
+    justify-content: unset;
+    align-items: unset;
+    gap: 0;
   }
+  @include xs-screen {
+    justify-content: unset;
+    gap: 0;
+  }
+}
+
+.intro::before {
+  content: "";
+  position: absolute;
+  background-image: url("/src/img/intro.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  top: 340px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.85;
 }
 
 .about-container {
   color: $white;
   font-size: 3rem;
+  margin-bottom: 35rem;
+  margin-top: 10rem;
   @include lg-screen {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin-top: 4rem;
-  
+    font-size: 2rem;
+    margin-top: 10rem;
   }
   @include sm-screen {
     font-size: 2rem;
+    margin-top: 10rem;
   }
 }
 
@@ -40,9 +59,21 @@
     position: relative;
     width: max-content;
     letter-spacing: 0.5rem;
+    font-size: 5rem;
+    .full-name {
+      color: $orange;
+    }
+    @include lg-screen {
+      font-size: 5rem;
+    }
+    @include sm-screen {
+      font-size: 2.5rem;
+    }
+    @include xs-screen {
+      font-size: 2rem;
+    }
   }
 }
-
 
 .name h2::before,
 h2::after {
@@ -55,7 +86,7 @@ h2::after {
 }
 
 .name h2::before {
-  background: #625668;
+  background: $black;
   animation: typewriter $type-writer-speed steps(20) 1s forwards;
 }
 
@@ -71,7 +102,7 @@ h2::after {
   opacity: 0;
   transform: translateY(3rem);
   animation: fadeInUp 2s ease calc($type-writer-speed + 1.5s) forwards;
-  @include lg-screen{
+  @include lg-screen {
     margin-bottom: 3rem;
   }
 }
@@ -95,50 +126,36 @@ h2::after {
   }
 }
 
-.image-container {
-  order: -1;
-  @include lg-screen{
-    order: 0;
-  }
-  img {
-    height: 50vh;
-    width: 370px;
-    object-fit: contain;
-    @include lg-screen{
-      width: auto;
-    }
-  }
-}
-
-// @media only screen and (max-width: 1080px) {
-//   .image-container {
-  
-//     img {
-      
-//     }
-//   }
-// }
-
 .landing-page-icons {
   display: flex;
   gap: 45px;
   flex-direction: column;
   align-items: center;
-  margin-left: 2em;
-  @include lg-screen {
-    flex-direction: row;
+  align-self: flex-end;
+  height: 50%;
+  margin-right: 5rem;
+  @include sm-screen {
+    height: 25%;
+    margin-right: 0rem;
   }
+  // @include xs-screen {
+  //   margin-bottom: 0;
+  //   margin-right: 0rem;
+  // }
 
   .fab,
   .fas {
-    color: $black;
+    color: $orange;
     font-size: 3rem;
     transition: all 0.3s ease-in-out;
+    @include sm-screen {
+      font-size: 2rem;
+    }
   }
 
   .fab:hover,
   .fas:hover {
-    color: rgba(51, 176, 161, 0.88);
+    color: $brick-red;
     transform: scale(1.5);
   }
 }

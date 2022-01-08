@@ -5,24 +5,22 @@
   top: 0;
   z-index: 3;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
-  height: 10vh;
-  gap: 7%;
+  padding: 5rem;
+  gap: 6%;
 }
 
 .nav-link {
   position: relative;
-  background: $color-gradient;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: $white;
   font-size: 2.3rem;
 }
 
 .nav-link::after {
   content: "";
   position: absolute;
-  background-color: pink;
+  background-color: $orange;
   height: 3px;
   width: 0%;
   left: 0;
@@ -34,18 +32,18 @@
   width: 100%;
 }
 
-@include sm-screen{
+@include sm-screen {
   .line1 {
     width: 15px;
     height: 3px;
     margin: 5px 0;
-    background: $color-gradient;
+    background: $light-orange;
   }
 
   .line2 {
     width: 30px;
     height: 3px;
-    background: $color-gradient;
+    background: $light-orange;
   }
 
   .line3 {
@@ -53,7 +51,7 @@
     height: 3px;
     margin: 5px 0;
     margin-left: 15px;
-    background: $color-gradient;
+    background: $light-orange;
   }
 
   .burger-menu-icon {

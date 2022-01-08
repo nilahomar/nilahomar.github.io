@@ -6,6 +6,7 @@
   flex-direction: column;
   margin: 0 1.45rem 5rem 1.45rem;
   .project-heading{
+    margin-top: 10rem;
     font-size: 2.5rem;
     color: $black;
     margin-bottom: 3rem;
@@ -28,7 +29,7 @@
     padding: 2rem;
     a{
       font-size: 1.5rem;
-      color: rgba(51, 176, 161, 0.88);
+      color: #33b0a1e0;
     }
   }
 }
@@ -36,7 +37,6 @@
 .project-card-flex {
   display: flex;
   gap: 20px;
-  height: 300px;
   overflow: hidden;
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
   h3 {

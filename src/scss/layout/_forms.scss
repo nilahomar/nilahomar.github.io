@@ -11,6 +11,9 @@
     color: $black;
   }
 }
+.contact-text {
+  margin-top: 10rem;
+}
 .contact-container {
   background-color: $color-gradient;
   border-radius: 5px;
@@ -42,7 +45,7 @@
   display: flex;
   flex: 1;
   height: 460px;
-  background-color: $light-brown;
+  background-color: $brown;
   justify-content: center;
   align-items: center;
   h2 {
