@@ -10,6 +10,23 @@
     @include lg-screen {
       width: 90%;
     }
+
+    .core-skills {
+      margin-top: 5rem;
+      font-size: 2rem;
+      color: $green;
+      li {
+        margin-left: 10rem;
+      }
+      li::before {
+        content: "\f054";
+        font-family: 'Font Awesome\ 5 Free';
+        font-weight: 900;
+        color: $brick-red;
+        display: inline-block;
+        width: 2rem;
+      }
+    }
   }
 
   h3 {
@@ -31,24 +48,6 @@
     gap: 30px;
   }
 }
-
-// .skill-sets {
-//   div {
-//     border-radius: 50%;
-//   }
-//   @include lg-screen{
-//     width: 50%;
-//     align-self: center;
-//   }
-//   @include sm-screen{
-//     width: 60%;
-//     align-self: center;
-//   }
-//   @include xs-screen{
-//     width: 100%;
-//     align-self: center;
-//   }
-// }
 
 .skill-sets {
   div {

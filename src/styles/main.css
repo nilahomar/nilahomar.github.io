@@ -484,6 +484,22 @@ h2::after {
     width: 90%;
   }
 }
+.skills .skills-text .core-skills {
+  margin-top: 5rem;
+  font-size: 2rem;
+  color: #33b0a1e0;
+}
+.skills .skills-text .core-skills li {
+  margin-left: 10rem;
+}
+.skills .skills-text .core-skills li::before {
+  content: "\f054";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  color: #C25C20;
+  display: inline-block;
+  width: 2rem;
+}
 .skills h3 {
   font-size: 8rem;
   color: #FA9129;
