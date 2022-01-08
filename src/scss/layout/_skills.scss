@@ -1,34 +1,34 @@
-.skills-container {
+.skills {
   min-height: 100vh;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
-  gap: 40px;
+  gap: 100px;
+
+  .skills-text {
+    width: 50%;
+    @include lg-screen {
+      width: 90%;
+    }
+  }
+
+  h3 {
+    font-size: 8rem;
+    color: $orange;
+    font-weight: 700;
+    margin-bottom: 7rem;
+  }
+
+  p {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    text-align: justify;
+  }
+
   @include lg-screen {
     flex-direction: column;
     justify-content: center;
     gap: 30px;
-  }
-
-  h3 {
-    font-size: 2.5rem;
-    color: $black;
-    font-weight: 700;
-    margin-bottom: 3rem;
-  }
-  p {
-    font-family: monospace;
-    font-size: 1.7rem;
-    margin-bottom: 1.5rem;
-    text-align: justify;
-  }
-}
-
-.skills-text {
-  width: 50%;
-  margin-top: 10rem;
-  @include lg-screen {
-    width: 90%;
   }
 }
 
@@ -60,14 +60,14 @@
   position: relative;
   width: 400px;
   height: 400px;
-  background-color: $brown;
+  background: radial-gradient(#0b75b9, #3b0d02);
 }
 
 .circle2 {
   transform: translate(18%, 18%);
   width: 300px;
   height: 300px;
-  background-color: $brown;
+  background: radial-gradient(#0b75b9, #3b0d02);
   box-shadow: 0px -13px 101px 6px rgba(230, 221, 15, 0.75);
   -webkit-box-shadow: 0px -13px 101px 6px rgb(53 41 67 / 90%);
   -moz-box-shadow: 0px -13px 101px 6px rgba(230, 221, 15, 0.75);
@@ -78,12 +78,13 @@
   width: 200px;
   height: 200px;
   position: relative;
-  background-color: $brown;
+  background: radial-gradient(#0b75b9, #3b0d02);
   box-shadow: 0px -13px 101px 6px rgba(230, 221, 15, 0.75);
   -webkit-box-shadow: 0px -13px 101px 6px rgb(53 41 67 / 90%);
   -moz-box-shadow: 0px -13px 101px 6px rgba(230, 221, 15, 0.75);
 }
 .skill-icons {
+  border: 1px dotted $orange;
   position: absolute;
   display: flex;
   align-items: center;
