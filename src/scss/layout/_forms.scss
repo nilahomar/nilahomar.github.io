@@ -5,22 +5,33 @@
   flex-direction: column;
   align-items: center;
   h3 {
-    font-size: 3rem;
+    font-size: 7rem;
+    color: $orange;
     font-weight: 700;
-    margin-bottom: 3rem;
-    color: $black;
+    margin-bottom: 7rem;
+
+    @include sm-screen {
+      font-size: 4rem;
+      margin-bottom: 4rem;
+    }
+    @include md-screen {
+      margin-top: 10rem;
+    }
+
+    @include xs-screen {
+      font-size: 3rem;
+    }
   }
+ 
 }
 .contact-text {
   margin-top: 10rem;
 }
 .contact-container {
-  background-color: $color-gradient;
   border-radius: 5px;
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  box-shadow: 0 4px 5px 3px rgba(119,53,136,.459);
   position: relative;
   overflow: hidden;
-  width: 50%;
   max-width: 100%;
   min-height: 480px;
   min-width: 370px;
@@ -37,18 +48,21 @@
   height: 460px;
   justify-content: center;
   align-items: center;
-  color: $white;
-  background-color: $color-gradient;
+  h2{
+    color: $brick-red;
+  }
 }
 
 .right-container {
   display: flex;
   flex: 1;
   height: 460px;
-  background-color: $brown;
+  border: 1px solid rgba(119,53,136,.459);
+  border-radius: 20px;
   justify-content: center;
   align-items: center;
   h2 {
+    color: $brick-red;
     font-size: 2.5rem;
     margin-bottom: 2rem;
   }
@@ -85,21 +99,21 @@ form {
       padding-left: 19.5%;
       color: #313a3d;
     }
-  }
-  label {
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: $background-gradient;
-    color: $white;
-    width: 100%;
-    height: 64px;
-    transition: 0.5s ease-in-out;
-    text-align: center;
-    padding: 2.5rem 0;
-    font-size: 1.3rem;
-    @include sm-screen{
-      font-size: 1rem;
+    label {
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: linear-gradient(to right, #0f0f10, #211930);
+      color: $grey;
+      width: 100%;
+      height: 64px;
+      transition: 0.5s ease-in-out;
+      text-align: center;
+      padding: 2.5rem 0;
+      font-size: 1.5rem;
+      @include sm-screen{
+        font-size: 1rem;
+      }
     }
   }
 }
@@ -121,16 +135,15 @@ form input[type="text"]:not(:placeholder-shown) + label,
 form textarea:focus + label,
 form textarea:not(:placeholder-shown) + label,
 form .field:hover label {
-  width: 18%;
+  width: 20%;
 }
 form input[type="submit"] {
-  background: $background-gradient;
+  background: $brick-red;
   color: $white;
   -webkit-appearance: none;
   border: none;
   position: relative;
   width: 30%;
-  // padding: 1rem 2rem;
   transition: all 0.5s ease-in-out;
   font-size: 1.2rem;
   font-weight: bold;
@@ -139,8 +152,7 @@ form input[type="submit"] {
 }
 form input[type="submit"]:hover,
 form input[type="submit"]:focus {
-  background: $color-gradient;
-  color: $black;
+  background: $green;
 }
 
 input,
@@ -150,7 +162,8 @@ textarea {
   padding: 12px 15px;
   margin: 8px 0;
   width: 100%;
-  font-size: 1rem;
+  font-size: 1.5rem;
+  text-align: center;
 }
 
 input:focus,

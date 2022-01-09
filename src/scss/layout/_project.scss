@@ -4,14 +4,23 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  .project-heading{
-    margin-top: 2rem;
-    font-size: 7rem;
-    color: $orange;
-    margin-bottom: 2rem;
-    @include md-screen {
-      font-size: 4rem;
-    }
+    h3 {
+      font-size: 7rem;
+      color: $orange;
+      font-weight: 700;
+      margin-bottom: 7rem;
+
+      @include sm-screen {
+        font-size: 4rem;
+        margin-bottom: 4rem;
+      }
+      @include md-screen {
+        margin-top: 10rem;
+      }
+
+      @include xs-screen {
+        font-size: 3rem;
+      }
   }
 }
 

@@ -715,15 +715,26 @@ h2::after {
   align-items: center;
   flex-direction: column;
 }
-.project-container .project-heading {
-  margin-top: 2rem;
+.project-container h3 {
   font-size: 7rem;
   color: #FA9129;
-  margin-bottom: 2rem;
+  font-weight: 700;
+  margin-bottom: 7rem;
+}
+@media only screen and (max-width: 767px) {
+  .project-container h3 {
+    font-size: 4rem;
+    margin-bottom: 4rem;
+  }
 }
 @media only screen and (max-width: 992px) {
-  .project-container .project-heading {
-    font-size: 4rem;
+  .project-container h3 {
+    margin-top: 10rem;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .project-container h3 {
+    font-size: 3rem;
   }
 }
 
@@ -794,10 +805,26 @@ h2::after {
   align-items: center;
 }
 .contact h3 {
-  font-size: 3rem;
+  font-size: 7rem;
+  color: #FA9129;
   font-weight: 700;
-  margin-bottom: 3rem;
-  color: #1b1b22;
+  margin-bottom: 7rem;
+}
+@media only screen and (max-width: 767px) {
+  .contact h3 {
+    font-size: 4rem;
+    margin-bottom: 4rem;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .contact h3 {
+    margin-top: 10rem;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .contact h3 {
+    font-size: 3rem;
+  }
 }
 
 .contact-text {
@@ -805,12 +832,10 @@ h2::after {
 }
 
 .contact-container {
-  background-color: linear-gradient(to left bottom, #0e0d14, #302d32, #534e54, #7a7377, #a2999c, #b4a8aa, #c7b7b8, #dac6c5, #dabfbc, #d9b8b2, #d7b2a7, #d4ac9c);
   border-radius: 5px;
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  box-shadow: 0 4px 5px 3px rgba(119, 53, 136, 0.459);
   position: relative;
   overflow: hidden;
-  width: 50%;
   max-width: 100%;
   min-height: 480px;
   min-width: 370px;
@@ -827,19 +852,22 @@ h2::after {
   height: 460px;
   justify-content: center;
   align-items: center;
-  color: #ECECEB;
-  background-color: linear-gradient(to left bottom, #0e0d14, #302d32, #534e54, #7a7377, #a2999c, #b4a8aa, #c7b7b8, #dac6c5, #dabfbc, #d9b8b2, #d7b2a7, #d4ac9c);
+}
+.left-container h2 {
+  color: #C25C20;
 }
 
 .right-container {
   display: flex;
   flex: 1;
   height: 460px;
-  background-color: #625668;
+  border: 1px solid rgba(119, 53, 136, 0.459);
+  border-radius: 20px;
   justify-content: center;
   align-items: center;
 }
 .right-container h2 {
+  color: #C25C20;
   font-size: 2.5rem;
   margin-bottom: 2rem;
 }
@@ -875,21 +903,21 @@ form .field textarea {
   padding-left: 19.5%;
   color: #313a3d;
 }
-form label {
+form .field label {
   position: absolute;
   top: 0;
   left: 0;
-  background: linear-gradient(to left bottom, #41343f, #473a46, #4e404e, #544755, #5a4d5d, #554a59, #504656, #4b4352, #3a3542, #2b2832, #1d1b23, #0e0d14);
-  color: #ECECEB;
+  background: linear-gradient(to right, #0f0f10, #211930);
+  color: #B1ACAC;
   width: 100%;
   height: 64px;
   transition: 0.5s ease-in-out;
   text-align: center;
   padding: 2.5rem 0;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
 }
 @media only screen and (max-width: 767px) {
-  form label {
+  form .field label {
     font-size: 1rem;
   }
 }
@@ -909,11 +937,11 @@ form input[type=text]:not(:placeholder-shown) + label,
 form textarea:focus + label,
 form textarea:not(:placeholder-shown) + label,
 form .field:hover label {
-  width: 18%;
+  width: 20%;
 }
 
 form input[type=submit] {
-  background: linear-gradient(to left bottom, #41343f, #473a46, #4e404e, #544755, #5a4d5d, #554a59, #504656, #4b4352, #3a3542, #2b2832, #1d1b23, #0e0d14);
+  background: #C25C20;
   color: #ECECEB;
   -webkit-appearance: none;
   border: none;
@@ -928,8 +956,7 @@ form input[type=submit] {
 
 form input[type=submit]:hover,
 form input[type=submit]:focus {
-  background: linear-gradient(to left bottom, #0e0d14, #302d32, #534e54, #7a7377, #a2999c, #b4a8aa, #c7b7b8, #dac6c5, #dabfbc, #d9b8b2, #d7b2a7, #d4ac9c);
-  color: #1b1b22;
+  background: #33b0a1e0;
 }
 
 input,
@@ -939,7 +966,8 @@ textarea {
   padding: 12px 15px;
   margin: 8px 0;
   width: 100%;
-  font-size: 1rem;
+  font-size: 1.5rem;
+  text-align: center;
 }
 
 input:focus,
