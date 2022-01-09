@@ -34,3 +34,10 @@ $justify-end : flex-end, $justify-center:center) {
       @content;
   }
 }
+
+//Above 768
+@mixin large-screen{
+  @media only screen and (min-width: 768px) {
+      @content;
+  }
+}

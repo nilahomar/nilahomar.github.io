@@ -1,0 +1,36 @@
+footer {
+  background: #1f1f26;
+  text-align: center;
+  padding: 1.5rem;
+  margin-top: 10rem;
+  h2 {
+    color: $brick-red;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+.footer-icons {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+
+  .fab,
+  .fas {
+    display: inline-block;
+    padding: 0.5em 0.5em;
+    color: $grey;
+    background-color: $black;
+    border-radius: 50%;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .fab:hover,
+  .fas:hover {
+    color: $white;
+    background-color: $orange;
+    transform: scale(1.5);
+  }
+}
