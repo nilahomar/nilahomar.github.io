@@ -139,7 +139,7 @@ body {
 }
 @media only screen and (max-width: 575px) {
   .name h2 {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 }
 
@@ -675,7 +675,7 @@ h2::after {
 .icon9 {
   top: 0px;
   left: 0px;
-  color: #f25cf2;
+  color: #ea6228;
 }
 
 .icon10 {
@@ -685,8 +685,8 @@ h2::after {
 }
 
 .icon11 {
-  top: 75px;
-  left: 75px;
+  top: 80px;
+  left: 80px;
   color: #efd81d;
 }
 @media only screen and (max-width: 767px) {
@@ -714,58 +714,57 @@ h2::after {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin: 0 1.45rem 5rem 1.45rem;
 }
 .project-container .project-heading {
-  margin-top: 10rem;
-  font-size: 2.5rem;
-  color: #1b1b22;
-  margin-bottom: 3rem;
+  margin-top: 2rem;
+  font-size: 7rem;
+  color: #FA9129;
+  margin-bottom: 2rem;
+}
+
+.cards-wrapper {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+@media only screen and (max-width: 992px) {
+  .cards-wrapper {
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+  }
 }
 
 .project-cards {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-  width: 70%;
+  background: linear-gradient(to right, #000000, #272738);
+  width: 30%;
+  line-height: 1.5;
+  box-shadow: 0 4px 5px 3px rgba(119, 53, 136, 0.459);
 }
-.project-cards .project-text {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  flex-direction: column;
-  width: 50%;
-  flex: 1;
-  padding: 2rem;
-}
-.project-cards .project-text a {
-  font-size: 1.5rem;
-  color: #33b0a1e0;
-}
-
-.project-card-flex {
-  display: flex;
-  gap: 20px;
+.project-cards img {
   overflow: hidden;
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
-.project-card-flex h3 {
+.project-cards .cards-heading {
+  margin-top: 2rem;
   font-size: 2rem;
-  color: #1b1b22;
+  color: #FA9129;
+  margin-bottom: 2rem;
 }
-.project-card-flex p {
-  font-size: 1.5rem;
-  font-family: monospace;
+.project-cards .project-content {
+  background: #1b1b22;
+  padding: 1rem;
+  font-size: 1.2rem;
 }
-.project-card-flex .project-image {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex: 1;
+.project-cards a {
+  color: #33b0a1e0;
+  font-size: 2rem;
 }
-.project-card-flex .project-image img {
-  max-width: 100%;
-  height: auto;
+@media only screen and (max-width: 992px) {
+  .project-cards {
+    width: 50%;
+  }
 }
 
 .contact {

@@ -4,57 +4,57 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin: 0 1.45rem 5rem 1.45rem;
   .project-heading{
-    margin-top: 10rem;
-    font-size: 2.5rem;
-    color: $black;
-    margin-bottom: 3rem;
+    margin-top: 2rem;
+    font-size: 7rem;
+    color: $orange;
+    margin-bottom: 2rem;
   }
 }
 
+.cards-wrapper {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  @include md-screen {
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+  }
+}
 
 .project-cards {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-  width: 70%;
-  .project-text {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: column;
-    width: 50%;
-    flex: 1;
-    padding: 2rem;
-    a{
-      font-size: 1.5rem;
-      color: #33b0a1e0;
-    }
+  background: linear-gradient(to right, #000000, #272738);
+  width: 30%;
+  line-height: 1.5;
+  box-shadow: 0 4px 5px 3px rgba(119,53,136,.459);
+  img {
+    overflow: hidden;
   }
-}
 
-.project-card-flex {
-  display: flex;
-  gap: 20px;
-  overflow: hidden;
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-  h3 {
+  .cards-heading{
+    margin-top: 2rem;
     font-size: 2rem;
-    color: $black;
+    color: $orange;
+    margin-bottom: 2rem;
   }
-  p {
-    font-size: 1.5rem;
-    font-family: monospace;
+
+  .project-content {
+    background: $black;
+    padding: 1rem;
+    font-size: 1.2rem;
   }
-  .project-image {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex: 1;
-    img {
-      max-width: 100%;
-      height: auto;
-    }
+
+  a {
+    color: $green;
+    font-size: 2rem;
+  }
+
+
+
+  @include md-screen {
+    width: 50%;
   }
 }
