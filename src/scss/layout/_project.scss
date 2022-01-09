@@ -9,6 +9,9 @@
     font-size: 7rem;
     color: $orange;
     margin-bottom: 2rem;
+    @include md-screen {
+      font-size: 4rem;
+    }
   }
 }
 
@@ -17,11 +20,10 @@
   align-items: center;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 1rem;
+  gap: 30px;
   @include md-screen {
     flex-direction: column;
     justify-content: center;
-    gap: 2rem;
   }
 }
 
@@ -29,7 +31,14 @@
   background: linear-gradient(to right, #000000, #272738);
   width: 30%;
   line-height: 1.5;
+  padding: 2rem;
   box-shadow: 0 4px 5px 3px rgba(119,53,136,.459);
+  transition: all .5s ease;
+
+  @include md-screen {
+    width: 70%;
+  }
+
   img {
     overflow: hidden;
   }
@@ -37,24 +46,33 @@
   .cards-heading{
     margin-top: 2rem;
     font-size: 2rem;
-    color: $orange;
+    color: $purple;
     margin-bottom: 2rem;
   }
 
   .project-content {
-    background: $black;
-    padding: 1rem;
     font-size: 1.2rem;
+    
+    .project-keywords {
+      color: $purple;
+    }
+
+    .project-links {
+      display: flex;
+      gap: 45px;
+      align-items: center;
+      justify-content: flex-end;   
+      padding: 1rem;
+      color: $green;
+    }
+  
+    .project-links a:hover {
+      color: $purple;
+    }    
   }
+}
 
-  a {
-    color: $green;
-    font-size: 2rem;
-  }
-
-
-
-  @include md-screen {
-    width: 50%;
-  }
+.project-cards:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 5px 3px $light-green;
 }
