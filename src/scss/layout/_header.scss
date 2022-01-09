@@ -113,31 +113,3 @@ h2::after {
     transform: translateY(0);
   }
 }
-
-.landing-page-icons {
-  display: flex;
-  gap: 45px;
-  flex-direction: column;
-  align-items: center;
-  align-self: flex-end;
-  height: 50%;
-  @include sm-screen {
-    height: 25%;
-  }
-
-  .fab,
-  .fas {
-    color: $orange;
-    font-size: 3rem;
-    transition: all 0.3s ease-in-out;
-    @include sm-screen {
-      font-size: 2rem;
-    }
-  }
-
-  .fab:hover,
-  .fas:hover {
-    color: $green;
-    transform: scale(1.5);
-  }
-}

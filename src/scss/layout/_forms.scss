@@ -164,6 +164,9 @@ textarea {
   width: 100%;
   font-size: 1.5rem;
   text-align: center;
+  @include sm-screen{
+    font-size: 1rem;
+  }  
 }
 
 input:focus,

@@ -188,37 +188,6 @@ h2::after {
     transform: translateY(0);
   }
 }
-.landing-page-icons {
-  display: flex;
-  gap: 45px;
-  flex-direction: column;
-  align-items: center;
-  align-self: flex-end;
-  height: 50%;
-}
-@media only screen and (max-width: 767px) {
-  .landing-page-icons {
-    height: 25%;
-  }
-}
-.landing-page-icons .fab,
-.landing-page-icons .fas {
-  color: #FA9129;
-  font-size: 3rem;
-  transition: all 0.3s ease-in-out;
-}
-@media only screen and (max-width: 767px) {
-  .landing-page-icons .fab,
-.landing-page-icons .fas {
-    font-size: 2rem;
-  }
-}
-.landing-page-icons .fab:hover,
-.landing-page-icons .fas:hover {
-  color: #33b0a1e0;
-  transform: scale(1.5);
-}
-
 .main-nav {
   background: #1b1b22;
   position: fixed;
@@ -226,7 +195,7 @@ h2::after {
   top: 0;
   z-index: 3;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
   padding: 5rem;
   gap: 6%;
@@ -315,10 +284,6 @@ h2::after {
     letter-spacing: 1.5px;
   }
 
-  .nav-link:hover {
-    color: #f9690e;
-  }
-
   .toggle {
     background: none;
   }
@@ -399,31 +364,60 @@ h2::after {
 }
 .about .about-me {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  margin-top: 15rem;
+  gap: 40px;
+  margin-top: 10rem;
   margin-bottom: 5rem;
 }
 .about .about-me h3 {
-  font-size: 8rem;
-  font-weight: 700;
+  font-size: 7rem;
   color: #FA9129;
-}
-@media only screen and (max-width: 1080px) {
-  .about .about-me h3 {
-    font-size: 7rem;
-  }
-}
-@media only screen and (max-width: 767px) {
-  .about .about-me h3 {
-    font-size: 4rem;
-  }
+  font-weight: 700;
 }
 @media only screen and (max-width: 575px) {
   .about .about-me h3 {
     font-size: 3rem;
   }
+}
+@media only screen and (max-width: 767px) {
+  .about .about-me h3 {
+    font-size: 4rem;
+    margin-bottom: 4rem;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .about .about-me h3 {
+    margin-top: 10rem;
+  }
+}
+.about .about-me .about-icons {
+  display: flex;
+  gap: 30px;
+  justify-content: flex-end;
+  flex-direction: row;
+  align-items: center;
+}
+@media only screen and (max-width: 767px) {
+  .about .about-me .about-icons {
+    font-size: 0.5rem;
+  }
+}
+.about .about-me .about-icons .fab,
+.about .about-me .about-icons .fas {
+  display: inline-block;
+  padding: 0.5em 0.5em;
+  color: #B1ACAC;
+  background-color: #262a4f;
+  border-radius: 50%;
+  transition: all 0.3s ease-in-out;
+}
+.about .about-me .about-icons .fab:hover,
+.about .about-me .about-icons .fas:hover {
+  color: #ECECEB;
+  background-color: #FA9129;
+  transform: scale(1.5);
 }
 .about .about-svg {
   width: 50%;
@@ -721,6 +715,11 @@ h2::after {
   font-weight: 700;
   margin-bottom: 7rem;
 }
+@media only screen and (max-width: 575px) {
+  .project-container h3 {
+    font-size: 3rem;
+  }
+}
 @media only screen and (max-width: 767px) {
   .project-container h3 {
     font-size: 4rem;
@@ -730,11 +729,6 @@ h2::after {
 @media only screen and (max-width: 992px) {
   .project-container h3 {
     margin-top: 10rem;
-  }
-}
-@media only screen and (max-width: 575px) {
-  .project-container h3 {
-    font-size: 3rem;
   }
 }
 
@@ -968,6 +962,12 @@ textarea {
   width: 100%;
   font-size: 1.5rem;
   text-align: center;
+}
+@media only screen and (max-width: 767px) {
+  input,
+textarea {
+    font-size: 1rem;
+  }
 }
 
 input:focus,

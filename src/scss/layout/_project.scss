@@ -10,6 +10,9 @@
       font-weight: 700;
       margin-bottom: 7rem;
 
+      @include xs-screen {
+        font-size: 3rem;
+      }
       @include sm-screen {
         font-size: 4rem;
         margin-bottom: 4rem;
@@ -18,9 +21,6 @@
         margin-top: 10rem;
       }
 
-      @include xs-screen {
-        font-size: 3rem;
-      }
   }
 }
 

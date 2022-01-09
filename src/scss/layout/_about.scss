@@ -6,25 +6,56 @@
 
   .about-me {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    margin-top: 15rem;
+    gap: 40px;
+    margin-top: 10rem;
     margin-bottom: 5rem;
 
     h3 {
-      font-size: 8rem;
-      font-weight: 700;
+      font-size: 7rem;
       color: $orange;
+      font-weight: 700;
 
-      @include lg-screen {
-        font-size: 7rem;
+      @include xs-screen {
+        font-size: 3rem;
       }
       @include sm-screen {
         font-size: 4rem;
+        margin-bottom: 4rem;
       }
-      @include xs-screen {
-        font-size: 3rem;
+      @include md-screen {
+        margin-top: 10rem;
+      }
+    }
+
+    .about-icons {
+      display: flex;
+      gap: 30px;
+      justify-content: flex-end;
+      flex-direction: row;
+      align-items: center;
+
+      @include sm-screen {
+        font-size: 0.5rem;
+      }
+
+      .fab,
+      .fas {
+        display: inline-block;
+        padding: 0.5em 0.5em;
+        color: $grey;
+        background-color:#262a4f;
+        border-radius: 50%;
+        transition: all 0.3s ease-in-out;
+      }
+
+      .fab:hover,
+      .fas:hover {
+        color: $white;
+        background-color: $orange;
+        transform: scale(1.5);
       }
     }
   }

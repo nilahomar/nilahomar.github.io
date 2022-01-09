@@ -5,7 +5,7 @@
   top: 0;
   z-index: 3;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
   padding: 5rem;
   gap: 6%;
@@ -92,10 +92,6 @@
     text-transform: uppercase;
     color: #cecece;
     letter-spacing: 1.5px;
-  }
-
-  .nav-link:hover {
-    color: rgba(249, 105, 14, 1);
   }
 
   .toggle {
