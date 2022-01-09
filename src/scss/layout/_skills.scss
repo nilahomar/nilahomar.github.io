@@ -3,49 +3,54 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 100px;
+  gap: 40px;
+
+  @include lg-screen {
+    flex-direction: column;
+  }
 
   .skills-text {
-    width: 50%;
-    @include lg-screen {
-      width: 90%;
+    font-size: 2rem;
+    margin-top: 6rem;
+    h3 {
+      font-size: 7rem;
+      color: $orange;
+      font-weight: 700;
+      margin-bottom: 7rem;
+
+      @include sm-screen {
+        font-size: 4rem;
+        margin-bottom: 4rem;
+      }
+      @include md-screen {
+        margin-top: 10rem;
+      }
+
+      @include xs-screen {
+        font-size: 3rem;
+      }
+    }
+
+    p {
+      margin-bottom: 1.5rem;
+      text-align: justify;
     }
 
     .core-skills {
       margin-top: 5rem;
-      font-size: 2rem;
       color: $green;
       li {
         margin-left: 10rem;
       }
       li::before {
         content: "\f054";
-        font-family: 'Font Awesome\ 5 Free';
+        font-family: "Font Awesome\ 5 Free";
         font-weight: 900;
         color: $brick-red;
         display: inline-block;
         width: 2rem;
       }
     }
-  }
-
-  h3 {
-    font-size: 8rem;
-    color: $orange;
-    font-weight: 700;
-    margin-bottom: 7rem;
-  }
-
-  p {
-    font-size: 2rem;
-    margin-bottom: 1.5rem;
-    text-align: justify;
-  }
-
-  @include lg-screen {
-    flex-direction: column;
-    justify-content: center;
-    gap: 30px;
   }
 }
 
@@ -60,6 +65,11 @@
   width: 400px;
   height: 400px;
   background: radial-gradient(#0b75b9, #3b0d02);
+
+  @include sm-screen {
+    width: 300px;
+    height: 300px;
+  }
 }
 
 .circle2 {
@@ -70,6 +80,11 @@
   box-shadow: 0px -13px 101px 6px rgba(230, 221, 15, 0.75);
   -webkit-box-shadow: 0px -13px 101px 6px rgb(53 41 67 / 90%);
   -moz-box-shadow: 0px -13px 101px 6px rgba(230, 221, 15, 0.75);
+
+  @include sm-screen {
+    width: 220px;
+    height: 220px;
+  }
 }
 
 .circle3 {
@@ -81,6 +96,12 @@
   box-shadow: 0px -13px 101px 6px rgba(230, 221, 15, 0.75);
   -webkit-box-shadow: 0px -13px 101px 6px rgb(53 41 67 / 90%);
   -moz-box-shadow: 0px -13px 101px 6px rgba(230, 221, 15, 0.75);
+
+  @include sm-screen {
+    transform: translate(23%, 23%);
+    width: 150px;
+    height: 150px;
+  }
 }
 .skill-icons {
   border: 1px dotted $orange;
@@ -88,12 +109,18 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 55px;
-  height: 55px;
+  width: 40px;
+  height: 40px;
   border-radius: 50px;
   background-color: $black;
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
   animation: zoom-in-zoom-out 3s ease-out infinite;
+
+  @include sm-screen {
+    font-size: 0.8rem;
+    width: 35px;
+    height: 35px;
+  }
 }
 
 @keyframes zoom-in-zoom-out {
@@ -112,29 +139,41 @@
   top: 0px;
   left: 170px;
   color: #f494e5;
+  @include sm-screen {
+    left: 140px;
+  }
 }
 
 .icon2 {
   bottom: 0px;
   right: 170px;
   color: #fe5d39;
+  @include sm-screen {
+    right: 140px;
+  }
 }
 
 .icon3 {
   top: 170px;
   left: 0px;
   color: white;
+  @include sm-screen {
+    top: 140px;
+  }
 }
 
 .icon4 {
   top: 170px;
   right: 0px;
   color: #f29100;
+  @include sm-screen {
+    top: 140px;
+  }
 }
 .icon5 {
   top: 0;
   left: 0px;
-  color:#f66e5f;
+  color: #f66e5f;
 }
 .icon6 {
   top: 0;
@@ -145,7 +184,7 @@
 .icon7 {
   bottom: 0px;
   right: 0px;
-  color:#268ee1;
+  color: #268ee1;
 }
 
 .icon8 {
@@ -157,7 +196,7 @@
 .icon9 {
   top: 0px;
   left: 0px;
-  color:#f25cf2;
+  color: #f25cf2;
 }
 .icon10 {
   top: 0px;
@@ -169,13 +208,16 @@
   top: 75px;
   left: 75px;
   color: #efd81d;
+  @include sm-screen {
+    top: 60px;
+    left: 60px;
+  }
 }
 
 .icon12 {
   bottom: 0px;
   left: 0px;
   color: #c13533;
-
 }
 
 .icon13 {
@@ -184,6 +226,9 @@
   color: #5ccdea;
 }
 
-.icon1, .icon2, .icon3, .icon4 {
-  z-index: 1;
-}
+// .icon1,
+// .icon2,
+// .icon3,
+// .icon4 {
+//   z-index: 1;
+// }

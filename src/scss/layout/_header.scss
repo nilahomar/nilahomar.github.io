@@ -1,11 +1,3 @@
-// .paragraph {
-//   background: linear-gradient( to right, rgba(249, 105, 14, 1) 0%, rgba(102, 51, 153, 1) 100% );
-//   height: 100px;
-//   color: rgba(249, 105, 14, 1);
-//   -webkit-background-clip: text;
-//   -webkit-text-fill-color: transparent;
-// }
-
 .intro {
   height: 100vh;
   display: flex;
@@ -37,17 +29,15 @@
   bottom: 0px;
   left: 0px;
   opacity: 0.85;
+  z-index: -1;
 }
 
 .about-container {
   color: $white;
   font-size: 3rem;
-  margin-bottom: 35rem;
-  margin-top: 10rem;
-  @include lg-screen {
-    font-size: 2rem;
-    margin-top: 10rem;
-  }
+  margin-top: 15rem;
+  align-self: flex-start;
+  justify-self: flex-start;
   @include sm-screen {
     font-size: 2rem;
     margin-top: 10rem;
@@ -102,9 +92,7 @@ h2::after {
   opacity: 0;
   transform: translateY(3rem);
   animation: fadeInUp 2s ease calc($type-writer-speed + 1.5s) forwards;
-  @include lg-screen {
-    margin-bottom: 3rem;
-  }
+  margin-bottom: 3rem;
 }
 
 @keyframes typewriter {
@@ -133,15 +121,9 @@ h2::after {
   align-items: center;
   align-self: flex-end;
   height: 50%;
-  margin-right: 5rem;
   @include sm-screen {
     height: 25%;
-    margin-right: 0rem;
   }
-  // @include xs-screen {
-  //   margin-bottom: 0;
-  //   margin-right: 0rem;
-  // }
 
   .fab,
   .fas {
@@ -155,7 +137,7 @@ h2::after {
 
   .fab:hover,
   .fas:hover {
-    color: $brick-red;
+    color: $green;
     transform: scale(1.5);
   }
 }
