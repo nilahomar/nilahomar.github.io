@@ -900,6 +900,10 @@ form textarea:not(:placeholder-shown)#msg {
   height: 140px;
 }
 
+form input[type=text]:focus + label,
+form input[type=text]:not(:placeholder-shown) + label,
+form textarea:focus + label,
+form textarea:not(:placeholder-shown) + label,
 form .field:hover label {
   width: 25%;
 }
