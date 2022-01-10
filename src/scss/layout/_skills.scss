@@ -47,7 +47,7 @@
   position: relative;
   width: 400px;
   height: 400px;
-  background: radial-gradient(#0b75b9, #3b0d02);
+  background: linear-gradient(to right top, #121215, #14181f, #0f1f27, #06272d, #002e2e);
 
   @include sm-screen {
     width: 300px;
@@ -59,7 +59,7 @@
   transform: translate(18%, 18%);
   width: 300px;
   height: 300px;
-  background: radial-gradient(#0b75b9, #3b0d02);
+  background: linear-gradient(to left bottom, #121215, #14181f, #0f1f27, #06272d, #002e2e);
   box-shadow: 0px -13px 101px 6px rgba(230, 221, 15, 0.75);
   -webkit-box-shadow: 0px -13px 101px 6px rgb(53 41 67 / 90%);
   -moz-box-shadow: 0px -13px 101px 6px rgba(230, 221, 15, 0.75);
@@ -75,7 +75,7 @@
   width: 200px;
   height: 200px;
   position: relative;
-  background: radial-gradient(#0b75b9, #3b0d02);
+  background: radial-gradient(circle, #121215, #14181f, #0f1f27, #06272d, #002e2e);
   box-shadow: 0px -13px 101px 6px rgba(230, 221, 15, 0.75);
   -webkit-box-shadow: 0px -13px 101px 6px rgb(53 41 67 / 90%);
   -moz-box-shadow: 0px -13px 101px 6px rgba(230, 221, 15, 0.75);
