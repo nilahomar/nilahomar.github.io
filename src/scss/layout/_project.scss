@@ -4,24 +4,6 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-    h3 {
-      font-size: 7rem;
-      color: $orange;
-      font-weight: 700;
-      margin-bottom: 7rem;
-
-      @include xs-screen {
-        font-size: 3rem;
-      }
-      @include sm-screen {
-        font-size: 4rem;
-        margin-bottom: 4rem;
-      }
-      @include md-screen {
-        margin-top: 10rem;
-      }
-
-  }
 }
 
 .cards-wrapper {
@@ -30,7 +12,8 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
-  @include md-screen {
+  
+  @include lg-screen {
     flex-direction: column;
     justify-content: center;
   }
@@ -41,18 +24,18 @@
   width: 30%;
   line-height: 1.5;
   padding: 2rem;
-  box-shadow: 0 4px 5px 3px rgba(119,53,136,.459);
-  transition: all .5s ease;
+  box-shadow: 0 4px 5px 3px rgba(119, 53, 136, 0.459);
+  transition: all 0.5s ease;
 
-  @include md-screen {
-    width: 70%;
+  @include lg-screen {
+    width: 50%;
   }
 
   img {
     overflow: hidden;
   }
 
-  .cards-heading{
+  .cards-heading {
     margin-top: 2rem;
     font-size: 2rem;
     color: $purple;
@@ -61,7 +44,7 @@
 
   .project-content {
     font-size: 1.2rem;
-    
+
     .project-keywords {
       color: $purple;
     }
@@ -70,14 +53,14 @@
       display: flex;
       gap: 45px;
       align-items: center;
-      justify-content: flex-end;   
+      justify-content: flex-end;
       padding: 1rem;
       color: $green;
     }
-  
+
     .project-links a:hover {
       color: $purple;
-    }    
+    }
   }
 }
 

@@ -1,43 +1,47 @@
-@mixin flex-container($direction: row, $spacing: space-between, 
-$justify-end : flex-end, $justify-center:center) {
+@mixin flex-container(
+  $direction: row,
+  $spacing: space-between,
+  $justify-end: flex-end,
+  $justify-center: center
+) {
   display: flex;
   flex-direction: $direction;
-  justify-content: $spacing; 
+  justify-content: $spacing;
   justify-content: $justify-end;
   justify-content: $justify-center;
 }
 
 //Large Screen - 993 to 1080 screen size
-@mixin lg-screen{
+@mixin lg-screen {
   @media only screen and (max-width: 1080px) {
-      @content;
+    @content;
   }
 }
 
 //Medium Screen - 768 to 992 screen size
-@mixin md-screen{
+@mixin md-screen {
   @media only screen and (max-width: 992px) {
-      @content;
+    @content;
   }
 }
 
 //Small Screen - 575 to 767 screen size
 @mixin sm-screen {
   @media only screen and (max-width: 767px) {
-      @content;
+    @content;
   }
 }
 
 //Extra Small Screen - below 575 screen size
-@mixin xs-screen{
+@mixin xs-screen {
   @media only screen and (max-width: 575px) {
-      @content;
+    @content;
   }
 }
 
 //Above 768
-@mixin large-screen{
+@mixin large-screen {
   @media only screen and (min-width: 768px) {
-      @content;
+    @content;
   }
 }

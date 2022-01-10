@@ -11,25 +11,6 @@
 
   .skills-text {
     font-size: 2rem;
-    margin-top: 6rem;
-    h3 {
-      font-size: 7rem;
-      color: $orange;
-      font-weight: 700;
-      margin-bottom: 7rem;
-
-      @include sm-screen {
-        font-size: 4rem;
-        margin-bottom: 4rem;
-      }
-      @include md-screen {
-        margin-top: 10rem;
-      }
-
-      @include xs-screen {
-        font-size: 3rem;
-      }
-    }
 
     p {
       margin-bottom: 1.5rem;
@@ -39,9 +20,11 @@
     .core-skills {
       margin-top: 5rem;
       color: $green;
+
       li {
         margin-left: 10rem;
       }
+
       li::before {
         content: "\f054";
         font-family: "Font Awesome\ 5 Free";
@@ -127,9 +110,11 @@
   0% {
     transform: scale(1, 1);
   }
+
   50% {
     transform: scale(1.2, 1.2);
   }
+
   100% {
     transform: scale(1, 1);
   }
@@ -170,11 +155,13 @@
     top: 140px;
   }
 }
+
 .icon5 {
   top: 0;
   left: 0px;
   color: #f66e5f;
 }
+
 .icon6 {
   top: 0;
   right: 0px;
@@ -198,6 +185,7 @@
   left: 0px;
   color: #ea6228;
 }
+
 .icon10 {
   top: 0px;
   right: 0px;
@@ -208,6 +196,7 @@
   top: 80px;
   left: 80px;
   color: #efd81d;
+
   @include sm-screen {
     top: 60px;
     left: 60px;
@@ -225,5 +214,3 @@
   right: 0px;
   color: #5ccdea;
 }
-
-

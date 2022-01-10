@@ -1,3 +1,19 @@
+.nav-icon {
+  color: $white;
+  background-color: $orange;
+  height: 97px;
+  width: 97px;
+  font-size: 6rem;
+  z-index: 5;
+  position: fixed;
+  text-align: center;
+  border-radius: 20% 0;
+
+  @include sm-screen {
+    display: none;
+  }  
+}
+
 .main-nav {
   background: #1f1f26;
   position: fixed;

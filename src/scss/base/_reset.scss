@@ -5,6 +5,7 @@
   margin: 0;
   padding: 0;
 }
+
 a {
   text-decoration: none;
   color: inherit;
@@ -24,6 +25,7 @@ ol,
 dd {
   list-style: none;
 }
+
 h1,
 h2,
 h3,
@@ -38,12 +40,12 @@ img {
   max-width: 100%;
   display: block;
 }
-html{
+
+html {
   scroll-behavior: smooth;
 }
 
 body {
-  // min-height: 100vh;
   text-rendering: optimizeSpeed;
   line-height: 1.6;
 }

@@ -4,28 +4,8 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  h3 {
-    font-size: 7rem;
-    color: $orange;
-    font-weight: 700;
-    margin-bottom: 7rem;
-
-    @include sm-screen {
-      font-size: 4rem;
-      margin-bottom: 4rem;
-    }
-    @include md-screen {
-      margin-top: 10rem;
-    }
-
-    @include xs-screen {
-      font-size: 3rem;
-    }
-  }
 }
-.contact-text {
-  margin-top: 10rem;
-}
+
 .contact-container {
   border-radius: 5px;
   box-shadow: 0 4px 5px 3px rgba(119, 53, 136, 0.459);
@@ -47,7 +27,8 @@
   height: 460px;
   justify-content: center;
   align-items: center;
-  h2 {
+
+  h4 {
     color: $brick-red;
   }
 
@@ -64,7 +45,8 @@
   border-radius: 20px;
   justify-content: center;
   align-items: center;
-  h2 {
+
+  h4 {
     color: $brick-red;
     font-size: 2.5rem;
     margin-bottom: 2rem;
@@ -76,7 +58,7 @@
   text-align: center;
 
   .large-view {
-    @include sm-screen {
+    @include lg-screen {
       display: none;
     }
   }
@@ -92,9 +74,11 @@
   height: 50%;
   width: 80%;
   text-align: center;
-  h2 {
+
+  h4 {
     font-size: 2.5rem;
   }
+
   p {
     font-size: 1.5rem;
   }
@@ -114,6 +98,7 @@ form {
       padding-left: 19.5%;
       color: #313a3d;
     }
+
     label {
       position: absolute;
       top: 0;
@@ -160,6 +145,7 @@ form input[type="submit"] {
   text-transform: uppercase;
   cursor: pointer;
 }
+
 form input[type="submit"]:hover,
 form input[type="submit"]:focus {
   background: $green;
@@ -179,8 +165,4 @@ textarea {
 input:focus,
 textarea:focus {
   outline: 1px solid $brown;
-}
-
-form p {
-  text-align: left;
 }

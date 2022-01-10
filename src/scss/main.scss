@@ -18,27 +18,53 @@ main {
   color: $white;
 }
 
-// @include lg-screen{
-//   section{
-//     margin-top: 10rem;
-//   }
-// }
-
-// @include sm-screen {
-//   body {
-//     max-width: 1280px;
-//     padding: 0;
-//   }
-// }
-
 h3 {
   text-align: center;
+  font-size: 7rem;
+  font-weight: 700;
+  color: $orange;
+  margin-top: 15rem;
+  margin-bottom: 5rem;
+
+  span {
+    background-color: $black;
+    background-image: linear-gradient(
+      to right top,
+      #1b1b22,
+      #34263c,
+      #592d4c,
+      #82314e,
+      #a63b43,
+      #a23c3a,
+      #9d3d32,
+      #973e2a,
+      #732d2a,
+      #4e2023,
+      #2a1418,
+      #000000
+    );
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+  }
+
+  @include xs-screen {
+    font-size: 3rem;
+  }
+
+  @include sm-screen {
+    font-size: 4rem;
+    margin-bottom: 4rem;
+    margin-top: 10rem;
+  }
 }
 
 .page-breaker {
   margin-top: 15rem;
   margin-bottom: 15rem;
-  background: linear-gradient( to right, $black, $brick-red );
+  background: linear-gradient(to right, $black, $brick-red);
   width: 100%;
   position: relative;
   padding: 1px;
