@@ -801,7 +801,7 @@ h1::after {
 
 .form-container {
   display: flex;
-  padding: 3rem;
+  padding: 1rem;
 }
 
 .left-container {
